@@ -25,153 +25,323 @@ namespace Calculator___material
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if(op % 2 == 0)
             {
-                number1 = number1 * 10 + 1;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 1;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 1;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 =number1 + Math.Pow(10, -decimalCount) * 1;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 1;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 1;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
 
         }
 
         private void Button0_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 0;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 0;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 0;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 0;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 0;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 0;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 2;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 2;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 2;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 2;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 2;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 2;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 3;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 3;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 3;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 3;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 3;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 3;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 4;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 4;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 4;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 4;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 4;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 4;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button5_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 5;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 5;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 5;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 5;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 5;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 5;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button6_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 6;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 6;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 6;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 6;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 6;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 6;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button7_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 7;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 7;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 7;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 7;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 7;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 7;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button8_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 8;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 8;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 8;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 8;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 8;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 8;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button9_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (op % 2 == 0)
             {
-                number1 = number1 * 10 + 9;
+                if (!isDecimal)
+                {
+                    number1 = number1 * 10 + 9;
+                }
+                else
+                {
+                    decimalCount++;
+                    number1 = number1 + Math.Pow(10, -decimalCount) * 9;
+                }
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
             }
             else
             {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 9;
+                if (!isDecimal)
+                {
+                    number2 = number2 * 10 + 9;
+                }
+                else
+                {
+                    decimalCount++;
+                    number2 = number2 + Math.Pow(10, -decimalCount) * 9;
+                }
+                string toBePrinted = number2.ToString();
+                InputBox.Text = toBePrinted;
             }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void ButtonEqv_Click(object sender, RoutedEventArgs e)
@@ -184,8 +354,10 @@ namespace Calculator___material
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
         {
             number1 = default(double);
+            number2 = default(double);
             OutputBox.Clear();
             decimalCount = 0;
+            op = 0;
             if (decimalCount == 0)
             {
                 isDecimal = false;
@@ -197,21 +369,63 @@ namespace Calculator___material
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "+";
+            if (op % 2 == 0)
+            {
+                OutputBox.Text = (number1 + number2).ToString();
+                number1 += number2;
+                number2 = default(double);
+            }
+            else
+            {
+                OutputBox.Text = (number1 + number2).ToString();
+                number2 += number1;
+                number1 = default(double);
+            }
+            op++;
+            decimalCount = 0;
+            isDecimal = false;
         }
 
         private void ButtonSub_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "-";
+            if (op % 2 == 0)
+            {
+                OutputBox.Text = number2.ToString();
+            }
+            else
+            {
+                OutputBox.Text = number1.ToString();
+            }
+            op++;
         }
 
         private void ButtonDiv_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "÷";
+            if (op % 2 == 0)
+            {
+                OutputBox.Text = number2.ToString();
+            }
+            else
+            {
+                OutputBox.Text = number1.ToString();
+            }
+            op++;
         }
 
         private void ButtonMul_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "×";
+            if (op % 2 == 0)
+            {
+                OutputBox.Text = number2.ToString();
+            }
+            else
+            {
+                OutputBox.Text = number1.ToString();
+            }
+            op++;
         }
 
         private void ButtonC_Click(object sender, RoutedEventArgs e)
@@ -254,11 +468,6 @@ namespace Calculator___material
                 InputBox.AppendText(",");
             }
             isDecimal = true;
-        }
-
-        private void SignBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
         }
     }
 }
