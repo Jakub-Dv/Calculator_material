@@ -358,6 +358,8 @@ namespace Calculator___material
             OutputBox.Clear();
             decimalCount = 0;
             op = 0;
+            SignBox.Clear();
+            
             if (decimalCount == 0)
             {
                 isDecimal = false;
@@ -432,8 +434,17 @@ namespace Calculator___material
         {
             if (!isDecimal)
             {
-                number1 = number1 / 10;
-                number1 = Math.Floor(number1);
+                if (op % 2 == 0)
+                {
+                    number1 = number1 / 10;
+                    number1 = Math.Floor(number1);
+                }
+                else
+                {
+                    number2 = number2 / 10;
+                    number2 = Math.Floor(number2);
+                }
+                
                 if (decimalCount <= 0)
                 {
                     decimalCount = 0;
@@ -446,9 +457,18 @@ namespace Calculator___material
             }
             else
             {
-                double numberHelp = number1 * Math.Pow(10, decimalCount);
-                numberHelp = numberHelp % 10;
-                number1 = number1 - Math.Pow(10, -(decimalCount)) * numberHelp;
+                if (op % 2 == 0)
+                {
+                    double numberHelp = number1 * Math.Pow(10, decimalCount);
+                    numberHelp = numberHelp % 10;
+                    number1 = number1 - Math.Pow(10, -(decimalCount)) * numberHelp;
+                }
+                else
+                {
+                    double numberHelp = number2 * Math.Pow(10, decimalCount);
+                    numberHelp = numberHelp % 10;
+                    number2 = number2 - Math.Pow(10, -(decimalCount)) * numberHelp;
+                }
                 decimalCount--;
                 if (decimalCount <= 0)
                 {
@@ -456,7 +476,16 @@ namespace Calculator___material
                     isDecimal = false;
                 }
             }
-            string toBePrinted = number1.ToString();
+
+            string toBePrinted;
+            if (op % 2 == 0)
+            {
+                toBePrinted = number1.ToString();
+            }
+            else
+            {
+                toBePrinted = number2.ToString();
+            }
             if (InputBox.Text.Length != 0)
                 InputBox.Text = toBePrinted;
         }
