@@ -10,11 +10,11 @@ namespace Calculator___material
     /// </summary>
     public partial class MainWindow : Window
     {
-        private float number1 = 0;
-        private float number2 = 0;
+        private double number1 = 0;
+        private double number2 = 0;
         private bool isDecimal;
         private int decimalCount = 0;
-
+        private int op = 0;
 
 
         public MainWindow()
@@ -32,7 +32,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 =(float)number1 + (float)Math.Pow(10, -decimalCount) * 1;
+                number1 =number1 + Math.Pow(10, -decimalCount) * 1;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -48,7 +48,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 0;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 0;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -63,7 +63,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 2;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 2;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -78,7 +78,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 3;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 3;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -93,7 +93,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 4;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 4;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -108,7 +108,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 5;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 5;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -123,7 +123,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 6;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 6;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -138,7 +138,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 7;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 7;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -153,7 +153,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 8;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 8;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -168,7 +168,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 9;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 9;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -176,12 +176,14 @@ namespace Calculator___material
 
         private void ButtonEqv_Click(object sender, RoutedEventArgs e)
         {
+            SignBox.Text = "=";
             HistoryBox.Text = OutputBox.Text;
+
         }
 
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
         {
-            number1 = default(float);
+            number1 = default(double);
             OutputBox.Clear();
             decimalCount = 0;
             if (decimalCount == 0)
@@ -192,42 +194,24 @@ namespace Calculator___material
             
         }
 
-        private void InputBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            /*
-            if(e.Handled >= char(0))
-            { }
-            Numbers NumPad or OPad only
-            */
-
-            /*
-            switch (e.Key)
-            {
-                case Key.Enter:
-                    ButtonEqv_Click(sender, e);
-                    break;
-            }
-            */
-        }
-
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
-            InputBox.AppendText("+");
+            SignBox.Text = "+";
         }
 
         private void ButtonSub_Click(object sender, RoutedEventArgs e)
         {
-            InputBox.AppendText("-");
+            SignBox.Text = "-";
         }
 
         private void ButtonDiv_Click(object sender, RoutedEventArgs e)
         {
-            InputBox.AppendText("/");
+            SignBox.Text = "÷";
         }
 
         private void ButtonMul_Click(object sender, RoutedEventArgs e)
         {
-            InputBox.AppendText("*");
+            SignBox.Text = "×";
         }
 
         private void ButtonC_Click(object sender, RoutedEventArgs e)
@@ -235,7 +219,7 @@ namespace Calculator___material
             if (!isDecimal)
             {
                 number1 = number1 / 10;
-                number1 = (float)Math.Floor(number1);
+                number1 = Math.Floor(number1);
                 if (decimalCount <= 0)
                 {
                     decimalCount = 0;
@@ -248,9 +232,9 @@ namespace Calculator___material
             }
             else
             {
-                float numberHelp = (float)number1 * (float)Math.Pow(10, decimalCount);
+                double numberHelp = number1 * Math.Pow(10, decimalCount);
                 numberHelp = numberHelp % 10;
-                number1 = (float)number1 - (float)Math.Pow(10, -(decimalCount)) * numberHelp;
+                number1 = number1 - Math.Pow(10, -(decimalCount)) * numberHelp;
                 decimalCount--;
                 if (decimalCount <= 0)
                 {
