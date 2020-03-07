@@ -360,13 +360,13 @@ namespace Calculator___material {
             return;
             case 14:
             this.ButtonMul = ((System.Windows.Controls.Button)(target));
-            
-            #line 173 "..\..\MainWindow.xaml"
-            this.ButtonMul.Click += new System.Windows.RoutedEventHandler(this.ButtonMul_Click);
-            
-            #line default
-            #line hidden
-            return;
+
+#line 173 "..\..\MainWindow.xaml"
+                    this.ButtonMul.Click += new System.Windows.RoutedEventHandler(this.ButtonMul_Click);
+
+#line default
+#line hidden
+                    return;
             case 15:
             this.ButtonEqv = ((System.Windows.Controls.Button)(target));
             

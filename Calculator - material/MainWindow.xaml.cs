@@ -1,19 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mime;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Calculator___material
 {
@@ -26,15 +13,7 @@ namespace Calculator___material
         private double number2 = 0;
         private bool isDecimal;
 
-        enum op
-        {
-            add,
-            sub,
-            mul,
-            div
-        }
-        
-        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -46,7 +25,7 @@ namespace Calculator___material
             number1 += 1;
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
-            
+
         }
 
         private void Button0_Click(object sender, RoutedEventArgs e)
@@ -115,6 +94,7 @@ namespace Calculator___material
 
         private void Button9_Click(object sender, RoutedEventArgs e)
         {
+            number1 = double.Parse(InputBox.Text, System.Globalization.CultureInfo.InvariantCulture);
             number1 = number1 * 10;
             number1 += 9;
             string toBePrinted = number1.ToString();
@@ -124,15 +104,14 @@ namespace Calculator___material
         private void ButtonEqv_Click(object sender, RoutedEventArgs e)
         {
             HistoryBox.Text = OutputBox.Text;
-            
-            
         }
 
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
         {
             number1 = default(double);
             OutputBox.Clear();
-            InputBox.Clear();
+            InputBox.Text = "0";
+            
         }
 
         private void InputBox_KeyDown(object sender, KeyEventArgs e)
@@ -179,8 +158,8 @@ namespace Calculator___material
             number1 = Math.Floor(number1);
             string toBePrinted = number1.ToString();
             if (InputBox.Text.Length != 0)
-                
                 InputBox.Text = toBePrinted;
         }
+
     }
 }
