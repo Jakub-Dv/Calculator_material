@@ -10,8 +10,8 @@ namespace Calculator___material
     /// </summary>
     public partial class MainWindow : Window
     {
-        private double number1 = 0;
-        private double number2 = 0;
+        private float number1 = 0;
+        private float number2 = 0;
         private bool isDecimal;
         private int decimalCount = 0;
 
@@ -20,6 +20,7 @@ namespace Calculator___material
         public MainWindow()
         {
             InitializeComponent();
+            InputBox.Text = "0";
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
@@ -31,7 +32,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 1;
+                number1 =(float)number1 + (float)Math.Pow(10, -decimalCount) * 1;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -47,7 +48,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 0;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 0;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -62,7 +63,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 2;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 2;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -77,7 +78,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 3;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 3;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -92,7 +93,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 4;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 4;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -107,7 +108,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 5;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 5;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -122,7 +123,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 6;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 6;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -137,7 +138,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 7;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 7;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -152,7 +153,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 8;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 8;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -167,7 +168,7 @@ namespace Calculator___material
             else
             {
                 decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 9;
+                number1 = (float)number1 + (float)Math.Pow(10, -decimalCount) * 9;
             }
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
@@ -180,7 +181,7 @@ namespace Calculator___material
 
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
         {
-            number1 = default(double);
+            number1 = default(float);
             OutputBox.Clear();
             decimalCount = 0;
             if (decimalCount == 0)
@@ -231,21 +232,25 @@ namespace Calculator___material
 
         private void ButtonC_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal || (isDecimal && decimalCount == 0))
+            if (!isDecimal)
             {
                 number1 = number1 / 10;
-                number1 = Math.Floor(number1);
+                number1 = (float)Math.Floor(number1);
                 if (decimalCount <= 0)
                 {
                     decimalCount = 0;
                     isDecimal = false;
                 }
             }
+            else if (isDecimal && decimalCount == 0)
+            {
+                isDecimal = false;
+            }
             else
             {
-                double numberHelp = number1 * Math.Pow(10, decimalCount);
+                float numberHelp = (float)number1 * (float)Math.Pow(10, decimalCount);
                 numberHelp = numberHelp % 10;
-                number1 = number1 - Math.Pow(10, -(decimalCount)) * numberHelp;
+                number1 = (float)number1 - (float)Math.Pow(10, -(decimalCount)) * numberHelp;
                 decimalCount--;
                 if (decimalCount <= 0)
                 {
@@ -265,6 +270,11 @@ namespace Calculator___material
                 InputBox.AppendText(",");
             }
             isDecimal = true;
+        }
+
+        private void SignBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+
         }
     }
 }
