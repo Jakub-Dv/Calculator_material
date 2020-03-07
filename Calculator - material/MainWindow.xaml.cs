@@ -108,7 +108,6 @@ namespace Calculator___material
             Numbers NumPad or OPad only
             */
 
-
             switch (e.Key)
             {
                 case Key.Enter:
