@@ -231,10 +231,15 @@ namespace Calculator___material
 
         private void ButtonC_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
+            if (!isDecimal || (isDecimal && decimalCount == 0))
             {
                 number1 = number1 / 10;
                 number1 = Math.Floor(number1);
+                if (decimalCount <= 0)
+                {
+                    decimalCount = 0;
+                    isDecimal = false;
+                }
             }
             else
             {
