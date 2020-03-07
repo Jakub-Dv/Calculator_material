@@ -180,7 +180,7 @@
                 </TransformGroup>
             </Button.RenderTransform> *
         </Button>
-        <Button x:Name="ButtonEqv" Grid.Row="5" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonEqv_Click" IsDefault="True">
+        <Button x:Name="ButtonEqv" Grid.Row="5" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonEqv_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -190,7 +190,7 @@
                 </TransformGroup>
             </Button.RenderTransform> =
         </Button>
-        <Button x:Name="ButtonDec" Grid.Row="5" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonDec_Click">
+        <Button x:Name="ButtonDec" Grid.Row="5" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -203,7 +203,7 @@
 
         <!-- Other Buttons -->
 
-        <Button x:Name="ButtonC" Grid.Row="2" Grid.Column="2" Height="Auto" RenderTransformOrigin="0.5,0.5" Click="ButtonC_Click" IsCancel="True">C</Button>
+        <Button x:Name="ButtonC" Grid.Row="2" Grid.Column="2" Height="Auto" RenderTransformOrigin="0.5,0.5" Click="ButtonC_Click">C</Button>
         <Button x:Name="ButtonCE" Grid.Row="3" Grid.Column="2" Height="Auto" Click="ButtonCE_Click">CE</Button>
         <Button Grid.Row="4" Grid.Column="2" Height="Auto"></Button>
         <Button Grid.Row="5" Grid.Column="2" Height="Auto"></Button>
