@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.RightsManagement;
 using System.Windows;
 using System.Windows.Input;
 
@@ -230,8 +231,23 @@ namespace Calculator___material
 
         private void ButtonC_Click(object sender, RoutedEventArgs e)
         {
-            number1 = number1 / 10;
-            number1 = Math.Floor(number1);
+            if (!isDecimal)
+            {
+                number1 = number1 / 10;
+                number1 = Math.Floor(number1);
+            }
+            else
+            {
+                double numberHelp = number1 * Math.Pow(10, decimalCount);
+                numberHelp = numberHelp % 10;
+                number1 = number1 - Math.Pow(10, -(decimalCount)) * numberHelp;
+                decimalCount--;
+                if (decimalCount <= 0)
+                {
+                    decimalCount = 0;
+                    isDecimal = false;
+                }
+            }
             string toBePrinted = number1.ToString();
             if (InputBox.Text.Length != 0)
                 InputBox.Text = toBePrinted;
