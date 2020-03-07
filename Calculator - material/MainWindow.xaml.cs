@@ -430,6 +430,7 @@ namespace Calculator___material
             op++;
         }
 
+
         private void ButtonC_Click(object sender, RoutedEventArgs e)
         {
             if (!isDecimal)
@@ -498,5 +499,37 @@ namespace Calculator___material
             }
             isDecimal = true;
         }
+
+        private void ButtonPow_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonFac_Click(object sender, RoutedEventArgs e)
+        {
+            SignBox.Text = "!";
+            if (number1 % 1 == 0 && number1 > 0)
+                Factorial_Count();
+            else
+                OutputBox.Text = "NaN";
+        }
+
+        //////////////////////////////////////////////////////////////
+        //////////////////FUNCTIONS///////////////////////////////////
+        //////////////////////////////////////////////////////////////
+
+        void Factorial_Count()
+        {
+            double x = 1;
+            for (double i = 1; i <= number1; i++)
+            {
+                x = i * x;
+            }
+            string toBePrinted = x.ToString();
+            number1 = x;
+            InputBox.Text = toBePrinted;
+        }
     }
+
+
 }

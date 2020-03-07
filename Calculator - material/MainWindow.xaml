@@ -205,8 +205,8 @@
 
         <Button x:Name="ButtonC" Grid.Row="2" Grid.Column="2" Height="Auto" RenderTransformOrigin="0.5,0.5" Click="ButtonC_Click" IsCancel="True" FontSize="20">C</Button>
         <Button x:Name="ButtonCE" Grid.Row="3" Grid.Column="2" Height="Auto" Click="ButtonCE_Click" FontSize="20">CE</Button>
-        <Button Grid.Row="4" Grid.Column="2" Height="Auto" Content="!" FontSize="30"></Button>
-        <Button Grid.Row="5" Grid.Column="2" Height="Auto" Content="^" FontSize="30"></Button>
+        <Button x:Name="ButtonFac" Grid.Row="4" Grid.Column="2" Height="Auto" Content="!" FontSize="30" Click="ButtonFac_Click"></Button>
+        <Button x:Name="ButtonPow" Grid.Row="5" Grid.Column="2" Height="Auto" Content="^" FontSize="30" Click="ButtonPow_Click"></Button>
 
         <!-- Input box -->
         <Border Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="5" Background="Beige"></Border>
