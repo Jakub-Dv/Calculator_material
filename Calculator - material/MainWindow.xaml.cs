@@ -502,13 +502,35 @@ namespace Calculator___material
 
         private void ButtonPow_Click(object sender, RoutedEventArgs e)
         {
-
+            SignBox.Text = "^";
+            if (op % 2 == 0)
+            {
+                OutputBox.Text = Math.Pow(number1, number2).ToString();
+                number1 = Math.Pow(number1, number2);
+                number2 = default(double);
+            }
+            else
+            {
+                OutputBox.Text = Math.Pow(number1, number2).ToString();
+                number2 = Math.Pow(number1, number2);
+                number1 = default(double);
+            }
+            op++;
+            decimalCount = 0;
+            isDecimal = false;
         }
 
         private void ButtonFac_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "!";
-            if (number1 % 1 == 0 && number1 > 0)
+            
+            if(number1 == 0)
+            {
+                number1 = 1;
+                string toBePrinted = number1.ToString();
+                InputBox.Text = toBePrinted;
+            }
+            else if (number1 % 1 == 0 && number1 > 0)
                 Factorial_Count();
             else
                 OutputBox.Text = "NaN";
