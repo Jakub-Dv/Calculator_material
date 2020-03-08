@@ -17,7 +17,7 @@ namespace Calculator___material
         private int decimalCount = 0;
         private bool isNegative;
         private int op = 0;
-        private string prevEqv; //used for idetification of previous equalization
+        private string prevEqv; //used for idetification of previous eqvalization
 
 
 
@@ -270,11 +270,6 @@ namespace Calculator___material
                 default:
                     number2 -= number1;
                     break;
-            }
-
-            if (number2 < 0)
-            {
-                isNegative = true;
             }
 
             prevEqv = "sub";
