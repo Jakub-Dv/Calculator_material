@@ -293,41 +293,20 @@ namespace Calculator___material
         {
             if (!isDecimal)
             {
-                if (op % 2 == 0)
-                {
-                    number1 = number1 / 10;
-                    number1 = Math.Floor(number1);
-                }
-                else
-                {
-                    number2 = number2 / 10;
-                    number2 = Math.Floor(number2);
-                }
-                
-                if (decimalCount <= 0)
+                number1 = number1 / 10;
+                number1 = Math.Floor(number1);
+
+                if (decimalCount >= 0)
                 {
                     decimalCount = 0;
                     isDecimal = false;
                 }
             }
-            else if (isDecimal && decimalCount == 0)
-            {
-                isDecimal = false;
-            }
             else
             {
-                if (op % 2 == 0)
-                {
-                    double numberHelp = number1 * Math.Pow(10, decimalCount);
-                    numberHelp = numberHelp % 10;
-                    number1 = number1 - Math.Pow(10, -(decimalCount)) * numberHelp;
-                }
-                else
-                {
-                    double numberHelp = number2 * Math.Pow(10, decimalCount);
-                    numberHelp = numberHelp % 10;
-                    number2 = number2 - Math.Pow(10, -(decimalCount)) * numberHelp;
-                }
+                double numberHelp = number1 * Math.Pow(10, decimalCount);
+                numberHelp = numberHelp % 10;
+                number1 = number1 - (Math.Pow(10, -(decimalCount)) * numberHelp);
                 decimalCount--;
                 if (decimalCount <= 0)
                 {
@@ -336,17 +315,27 @@ namespace Calculator___material
                 }
             }
 
-            string toBePrinted;
-            if (op % 2 == 0)
-            {
-                toBePrinted = number1.ToString();
-            }
-            else
-            {
-                toBePrinted = number2.ToString();
-            }
+            string toBePrinted = number1.ToString();
             if (InputBox.Text.Length != 0)
+            {
                 InputBox.Text = toBePrinted;
+                /*
+                if (decimalCount > 0)
+                {
+                    double numberHelp = number2;
+                    int realDecimalCount;
+                    for (realDecimalCount = 0; Math.Floor(numberHelp) != numberHelp; realDecimalCount++)
+                    {
+                        numberHelp *= 10;
+                    }
+
+                    for (; realDecimalCount != 0; realDecimalCount--)
+                    {
+                        InputBox.AppendText("0");
+                    }
+                }
+                */
+            }
         }
 
         private void ButtonDec_Click(object sender, RoutedEventArgs e)
