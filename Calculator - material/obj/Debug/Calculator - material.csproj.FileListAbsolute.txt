@@ -61,3 +61,4 @@ C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Ca
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.csproj.CopyComplete
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.exe
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.pdb
+C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.csproj.CoreCompileInputs.cache

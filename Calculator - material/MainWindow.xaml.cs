@@ -10,10 +10,10 @@ namespace Calculator___material
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         private double number1 = 0;
         private double number2 = 0;
         private bool isDecimal;
-        private bool isNegative;
         private int decimalCount = 0;
         private int op = 0;
         private string prevEqv; //used for idetification of previous equalization
@@ -27,6 +27,7 @@ namespace Calculator___material
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
+            
             if (!isDecimal)
             {
                 number1 = number1 * 10 + 1;
@@ -179,7 +180,6 @@ namespace Calculator___material
         private void ButtonEqv_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "=";
-            HistoryBox.Text = OutputBox.Text;
             switch (prevEqv)
             {
                 case "add":
@@ -187,6 +187,8 @@ namespace Calculator___material
                     InputBox.Clear();
                     break;
                 case "sub":
+                    OutputBox.Text = (number2 - number1).ToString();
+                    InputBox.Clear();
                     break;
                 case "mul":
                     break;
@@ -195,6 +197,7 @@ namespace Calculator___material
                 default:
                     break;
             }
+            HistoryBox.Text = OutputBox.Text + "\n" + HistoryBox.Text;
         }
 
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
@@ -218,6 +221,7 @@ namespace Calculator___material
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "+";
+            InputBox.Text = "0";
             switch (prevEqv)
             {
                 case "add":
@@ -349,7 +353,7 @@ namespace Calculator___material
 
         private void ButtonPow_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void ButtonFac_Click(object sender, RoutedEventArgs e)
@@ -375,6 +379,73 @@ namespace Calculator___material
             string toBePrinted = x.ToString();
             number1 = x;
             InputBox.Text = toBePrinted;
+        }
+
+        private void InputBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.Key)
+            {
+                case Key.NumPad0:
+                    Button0_Click(sender, e);
+                    break;
+                case Key.NumPad1:
+                    Button1_Click(sender, e);
+                    break;
+                case Key.NumPad2:
+                    Button2_Click(sender, e);
+                    break;
+                case Key.NumPad3:
+                    Button3_Click(sender, e);
+                    break;
+                case Key.NumPad4:
+                    Button4_Click(sender, e);
+                    break;
+                case Key.NumPad5:
+                    Button5_Click(sender, e);
+                    break;
+                case Key.NumPad6:
+                    Button6_Click(sender, e);
+                    break;
+                case Key.NumPad7:
+                    Button7_Click(sender, e);
+                    break;
+                case Key.NumPad8:
+                    Button8_Click(sender, e);
+                    break;
+                case Key.NumPad9:
+                    Button9_Click(sender, e);
+                    break;
+                case Key.Back:
+                    ButtonC_Click(sender, e);
+                    break;
+                case Key.Enter:
+                    ButtonEqv_Click(sender, e);
+                    break;
+                case Key.Subtract:
+                    ButtonSub_Click(sender, e);
+                    break;
+                case Key.Add:
+                    ButtonAdd_Click(sender, e);
+                    break;
+                case Key.Multiply:
+                    ButtonMul_Click(sender, e);
+                    break;
+                case Key.Divide:
+                    ButtonDiv_Click(sender, e);
+                    break;
+                case Key.OemComma:
+                    ButtonDec_Click(sender, e);
+                    break;
+                case Key.OemPeriod:
+                    ButtonDec_Click(sender, e);
+                    break;
+                case Key.Decimal:
+                    ButtonDec_Click(sender, e);
+                    break;
+                default:
+                    break;
+            }
+
         }
     }
 
