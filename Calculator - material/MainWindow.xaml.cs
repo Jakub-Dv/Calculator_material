@@ -25,6 +25,21 @@ namespace Calculator___material
             InputBox.Text = "0";
         }
 
+        private void Button0_Click(object sender, RoutedEventArgs e)
+        {
+            if (!isDecimal)
+            {
+                number1 = number1 * 10 + 0;
+            }
+            else
+            {
+                decimalCount++;
+                number1 = number1 + Math.Pow(10, -decimalCount) * 0;
+            }
+            string toBePrinted = number1.ToString();
+            InputBox.Text = toBePrinted;
+        }
+
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
             
@@ -40,21 +55,6 @@ namespace Calculator___material
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
 
-        }
-
-        private void Button0_Click(object sender, RoutedEventArgs e)
-        {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 0;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 0;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
@@ -445,6 +445,16 @@ namespace Calculator___material
                 default:
                     break;
             }
+
+        }
+
+        private void ButtonRoot_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonHelp_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

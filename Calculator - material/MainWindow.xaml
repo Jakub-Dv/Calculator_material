@@ -194,24 +194,22 @@
                 </TransformGroup>
             </Button.RenderTransform> =
         </Button>
-        <Button x:Name="ButtonDec" Grid.Row="5" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonDec_Click">
+        <Button x:Name="ButtonDec" Grid.Row="5" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="ButtonDec_Click">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
                 </TransformGroup>
-            </Button.RenderTransform> .
+            </Button.RenderTransform> ,
         </Button>
-
         <!-- Other Buttons -->
 
         <Button x:Name="ButtonC" Grid.Row="2" Grid.Column="2" Height="Auto" RenderTransformOrigin="0.5,0.5" Click="ButtonC_Click" FontSize="20">C</Button>
         <Button x:Name="ButtonCE" Grid.Row="3" Grid.Column="2" Height="Auto" Click="ButtonCE_Click" FontSize="20">CE</Button>
         <Button x:Name="ButtonFac" Grid.Row="4" Grid.Column="2" Height="Auto" Content="!" FontSize="30" Click="ButtonFac_Click"></Button>
         <Button x:Name="ButtonPow" Grid.Row="5" Grid.Column="2" Height="Auto" Content="^" FontSize="30" Click="ButtonPow_Click"></Button>
-
+        <Button x:Name="ButtonRoot" Grid.Row="5" Grid.Column="1" Height="Auto" Content="√" FontSize="30" Click="ButtonRoot_Click" ></Button>
+        <Button x:Name="ButtonHelp" Grid.Row="5" Grid.Column="0" Height="Auto" Content="?" FontSize="30" Click="ButtonHelp_Click" Background="LightYellow" Foreground="BlueViolet" />
+        
         <!-- Input box -->
         <Border Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="5" Background="Beige"></Border>
         <TextBox x:Name="InputBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="60" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="5" IsReadOnly="True" RenderTransformOrigin="0,0" Margin="0,0,49,0"/>
@@ -221,8 +219,8 @@
         <TextBox x:Name="OutputBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="60" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="5" IsReadOnly="True" RenderTransformOrigin="0,0" Margin="0,0,49,0" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" ></TextBox>
 
         <!-- History box -->
-        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="6" Background="DarkOrange"/>
-        <TextBox x:Name="HistoryBox" TextAlignment="Left" VerticalAlignment="Bottom" BorderThickness="0" FontSize="25" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="6" IsReadOnly="True" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" AllowDrop="True" Height="565" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" Margin="30,0,0,0"/>
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DarkOrange"/>
+        <TextBox x:Name="HistoryBox" TextAlignment="Left" VerticalAlignment="Bottom" BorderThickness="0" FontSize="25" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" IsReadOnly="True" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" AllowDrop="True" Height="375" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" Margin="30,0,0,0"/>
 
         <!-- Sign box -->
         <TextBox x:Name="SignBox" HorizontalAlignment="Center" Height="180" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="50" Grid.Column="6" Margin="49,0,0,10" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" FontSize="30" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.547,0.489" FontWeight="Bold" materialDesign:TextFieldAssist.DecorationVisibility="Hidden"/>
