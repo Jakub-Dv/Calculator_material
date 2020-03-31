@@ -16,7 +16,6 @@ namespace Calculator___material
         private int decimalCount = 0;
         private int op = 0;
         private string prevEqv; //used for idetification of previous equalization
-        private Math.Math Math;
 
 
         public MainWindow()
@@ -253,7 +252,7 @@ namespace Calculator___material
             decimalCount = 0;
             isDecimal = false;
         }
-        
+
         private void ButtonSub_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "-";
@@ -373,9 +372,9 @@ namespace Calculator___material
                 OutputBox.Text = "NaN";
         }
 
-        ///////////////////////////////////////////////////////////////
-        //////////////////FUNCTIONS////////////////////////////////////
-        ///////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////
+        //////////////////FUNCTIONS///////////////////////////////////
+        //////////////////////////////////////////////////////////////
 
         void Factorial_Count()
         {
@@ -458,7 +457,7 @@ namespace Calculator___material
 
         private void ButtonRoot_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void ButtonHelp_Click(object sender, RoutedEventArgs e)
@@ -466,15 +465,7 @@ namespace Calculator___material
             
             HelpWindow helpWindow = new HelpWindow();
             helpWindow.ShowDialog();
-<<<<<<< HEAD
-=======
 
-        }
->>>>>>> J2
-
-        private void ButtonModulo_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
 
         private void ButtonModulo_Click(object sender, RoutedEventArgs e)
