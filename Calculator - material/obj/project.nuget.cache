@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NmmWANKNRG561hTJxvwliwwqxJKtov1ey4mFA/dWrNxfF5bDirPwO7z7JHBMlnHlmXvJm6mLxdS2Yeb5w9Codw==",
+  "success": true,
+  "projectFilePath": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\Calculator - material.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jakub\\.nuget\\packages\\materialdesigncolors\\1.2.2\\materialdesigncolors.1.2.2.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\materialdesignthemes\\3.0.1\\materialdesignthemes.3.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

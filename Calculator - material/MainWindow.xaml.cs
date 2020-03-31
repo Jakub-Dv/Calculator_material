@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Input;
+using Mathematics;
 
 namespace Calculator___material
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    
     public partial class MainWindow : Window
     {
         
@@ -16,8 +18,7 @@ namespace Calculator___material
         private int decimalCount = 0;
         private int op = 0;
         private string prevEqv; //used for idetification of previous equalization
-
-
+        Mathematics.Operations Math = new Mathematics.Operations();
         public MainWindow()
         {
             InitializeComponent();
@@ -32,6 +33,7 @@ namespace Calculator___material
             }
             else
             {
+                
                 decimalCount++;
                 number1 = number1 + Math.Pow(10, -decimalCount) * 0;
             }
@@ -330,22 +332,6 @@ namespace Calculator___material
             if (InputBox.Text.Length != 0)
             {
                 InputBox.Text = toBePrinted;
-                /*
-                if (decimalCount > 0)
-                {
-                    double numberHelp = number2;
-                    int realDecimalCount;
-                    for (realDecimalCount = 0; Math.Floor(numberHelp) != numberHelp; realDecimalCount++)
-                    {
-                        numberHelp *= 10;
-                    }
-
-                    for (; realDecimalCount != 0; realDecimalCount--)
-                    {
-                        InputBox.AppendText("0");
-                    }
-                }
-                */
             }
         }
 
@@ -371,10 +357,6 @@ namespace Calculator___material
             else
                 OutputBox.Text = "NaN";
         }
-
-        //////////////////////////////////////////////////////////////
-        //////////////////FUNCTIONS///////////////////////////////////
-        //////////////////////////////////////////////////////////////
 
         void Factorial_Count()
         {
@@ -467,8 +449,12 @@ namespace Calculator___material
             helpWindow.ShowDialog();
 
         }
-
         private void ButtonModulo_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void ButtonMod_Click(object sender, RoutedEventArgs e)
         {
             
         }

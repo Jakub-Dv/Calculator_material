@@ -47,7 +47,6 @@ C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\Ma
 C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\MaterialDesignColors.pdb
 C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.csprojAssemblyReference.cache
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\MainWindow.g.cs
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\App.g.cs
@@ -64,3 +63,4 @@ C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Ca
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.csproj.CoreCompileInputs.cache
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\HelpWindow.g.cs
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\HelpWindow.baml
+C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\Mathematics.dll
