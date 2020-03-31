@@ -194,10 +194,15 @@ namespace Calculator___material
                     break;
                 case "div":
                     break;
+                case "eqv":
+                    number2 = 0;
+                    break;
                 default:
                     break;
             }
             HistoryBox.Text = OutputBox.Text + "\n" + HistoryBox.Text;
+            number1 = 0;
+            prevEqv = "eqv";
         }
 
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
@@ -233,6 +238,9 @@ namespace Calculator___material
                 case "mul":
                     break;
                 case "div":
+                    break;
+                case "eqv":
+                    number2 = number1;
                     break;
                 default:
                     number2 += number1;
@@ -455,7 +463,15 @@ namespace Calculator___material
 
         private void ButtonHelp_Click(object sender, RoutedEventArgs e)
         {
+            
+            HelpWindow helpWindow = new HelpWindow();
+            helpWindow.ShowDialog();
 
+        }
+
+        private void ButtonModulo_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 
