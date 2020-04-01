@@ -168,20 +168,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jakub\\.nuget\\packages\\": {}
+    "C:\\Users\\jarek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\Calculator - material.csproj",
+      "projectUniqueName": "C:\\IVS_PROJEKT_2\\Calculator_material\\Calculator - material\\Calculator - material.csproj",
       "projectName": "Calculator - material",
-      "projectPath": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\Calculator - material.csproj",
-      "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\obj\\",
+      "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\Calculator - material\\Calculator - material.csproj",
+      "packagesPath": "C:\\Users\\jarek\\.nuget\\packages\\",
+      "outputPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\Calculator - material\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jarek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
