@@ -1,7 +1,5 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
-using Mathematics;
 
 namespace Calculator___material
 {
@@ -14,11 +12,11 @@ namespace Calculator___material
         
         private double number1 = 0;
         private double number2 = 0;
-        private bool isDecimal;
+        private bool isDecimal = false;
         private int decimalCount = 0;
-        private int op = 0;
         private string prevEqv; //used for idetification of previous equalization
         Mathematics.Operations Math = new Mathematics.Operations();
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -178,25 +176,96 @@ namespace Calculator___material
             InputBox.Text = toBePrinted;
         }
 
+        private void Defaults()
+        {
+            OutputBox.Text = number2.ToString();
+            number1 = default(double);
+            decimalCount = 0;
+            isDecimal = false;
+        }
+
+        private void Operations(string prevEqv)
+        {
+            switch (prevEqv)
+            {
+                case "add":
+                    number2 = Math.Sum(number2, number1);
+                    break;
+                case "sub":
+                    number2 = Math.Sub(number2, number1);
+                    break;
+                case "mul":
+                    number2 = Math.Mul(number2, number1);
+                    break;
+                case "div":
+                    number2 = Math.Div(number2, number1);
+                    break;
+                case "pow":
+                    number2 = Math.Pow(number2, number1);
+                    break;
+                case "fac":
+                    number2 = Math.Fac(number1);
+                    break;
+                case "sqrt":
+                    number2 = Math.Sqrt(number1, number2);
+                    break;
+                case "mod":
+                    number2 = Math.Mod(number2, number1);
+                    break;
+
+                case "eqv":
+                    number2 = number1;
+                    break;
+                default:
+                    number2 = number1;
+                    break;
+            }
+        }
+
         private void ButtonEqv_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "=";
             switch (prevEqv)
             {
                 case "add":
-                    OutputBox.Text = (number2 + number1).ToString();
+                    number2 = Math.Sum(number2, number1);
+                    OutputBox.Text = number2.ToString();
                     InputBox.Clear();
                     break;
                 case "sub":
-                    OutputBox.Text = (number2 - number1).ToString();
+                    number2 = Math.Sub(number2, number1);
+                    OutputBox.Text = number2.ToString();
                     InputBox.Clear();
                     break;
                 case "mul":
+                    number2 = Math.Mul(number2, number1);
+                    OutputBox.Text = number2.ToString();
+                    InputBox.Clear();
                     break;
                 case "div":
+                    number2 = Math.Div(number2, number1);
+                    OutputBox.Text = number2.ToString();
+                    InputBox.Clear();
                     break;
+                case "pow":
+                    number2 = Math.Pow(number2, number1);
+                    OutputBox.Text = number2.ToString();
+                    InputBox.Clear();
+                    break;
+                case "sqrt":
+                    number2 = Math.Sqrt(number1, number2);
+                    OutputBox.Text = number2.ToString();
+                    InputBox.Clear();
+                    break;
+                case "mod":
+                    number2 = Math.Mod(number2, number1);
+                    OutputBox.Text = number2.ToString();
+                    InputBox.Clear();
+                    break;
+
+
                 case "eqv":
-                    number2 = 0;
+                    number2 = number1;
                     break;
                 default:
                     break;
@@ -208,18 +277,13 @@ namespace Calculator___material
 
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
         {
-            number1 = default(double);
-            number2 = default(double);
+            number1 = 0;
+            number2 = 0;
             OutputBox.Clear();
             decimalCount = 0;
-            op = 0;
             SignBox.Clear();
             prevEqv = default(string);
-
-            if (decimalCount == 0)
-            {
-                isDecimal = false;
-            }
+            isDecimal = false;
             InputBox.Text = "0";
             
         }
@@ -228,79 +292,47 @@ namespace Calculator___material
         {
             SignBox.Text = "+";
             InputBox.Text = "0";
-            switch (prevEqv)
-            {
-                case "add":
-                    number2 += number1;
-                    break;
-                case "sub":
-                    number2 -= number1;
-                    break;
-                case "mul":
-                    break;
-                case "div":
-                    break;
-                case "eqv":
-                    number2 = number1;
-                    break;
-                default:
-                    number2 += number1;
-                    break;
-            }
-            OutputBox.Text = number2.ToString();
+
+            Operations(prevEqv);
+            Defaults();
+
             prevEqv = "add";
-            number1 = default(double);
-            op++;
-            decimalCount = 0;
-            isDecimal = false;
         }
 
         private void ButtonSub_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "-";
-            if (op == 0)
-            {
-                number2 = number1;
-                number1 = default(double);
-            }
+            InputBox.Text = "0";
 
-            switch (prevEqv)
-            {
-                case "add":
-                    number2 += number1;
-                    break;
-                case "sub":
-                    number2 -= number1;
-                    break;
-                case "mul":
-                    break;
-                case "div":
-                    break;
-                default:
-                    number2 -= number1;
-                    break;
-            }
+            Operations(prevEqv);
+            Defaults();
 
             prevEqv = "sub";
-            number1 = default(double);
-            OutputBox.Text = number2.ToString();
-            op++;
-            decimalCount = 0;
-            isDecimal = false;
+        }
+
+        
+
+        private void ButtonMul_Click(object sender, RoutedEventArgs e)
+        {
+            SignBox.Text = "×";
+            InputBox.Text = "0";
+
+            Operations(prevEqv);
+            Defaults();
+
+            prevEqv = "mul";
         }
 
         private void ButtonDiv_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "÷";
+            InputBox.Text = "0";
+
+            Operations(prevEqv);
+            Defaults();
+
             prevEqv = "div";
         }
-
-        private void ButtonMul_Click(object sender, RoutedEventArgs e)
-        {
-            SignBox.Text = "×";
-            prevEqv = "mul";
-        }
-
 
         private void ButtonC_Click(object sender, RoutedEventArgs e)
         {
@@ -346,35 +378,56 @@ namespace Calculator___material
 
         private void ButtonPow_Click(object sender, RoutedEventArgs e)
         {
-            
+            SignBox.Text = "^";
+            InputBox.Text = "0";
+
+            Operations(prevEqv);
+            Defaults();
+
+            prevEqv = "pow";
         }
 
         private void ButtonFac_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "!";
-            if (number1 % 1 == 0 && number1 > 0)
-                Factorial_Count();
-            else
-                OutputBox.Text = "NaN";
+            InputBox.Text = "0";
+            prevEqv = "fac";
+
+            Operations(prevEqv);
+            Defaults();
+
+            prevEqv = default(string);
         }
 
-        void Factorial_Count()
+        private void ButtonRoot_Click(object sender, RoutedEventArgs e)
         {
-            double x = 1;
-            for (double i = 1; i <= number1; i++)
-            {
-                x = i * x;
-            }
-            string toBePrinted = x.ToString();
-            number1 = x;
-            InputBox.Text = toBePrinted;
+            SignBox.Text = "√";
+            InputBox.Text = "0";
+
+            Operations(prevEqv);
+            Defaults();
+
+            prevEqv = "sqrt";
+        }
+
+        private void ButtonMod_Click(object sender, RoutedEventArgs e)
+        {
+            SignBox.Text = "%";
+            InputBox.Text = "0";
+
+            Operations(prevEqv);
+            Defaults();
+
+            prevEqv = "mod";
         }
 
         private void InputBox_KeyDown(object sender, KeyEventArgs e)
         {
+            
             switch (e.Key)
             {
                 case Key.NumPad0:
+                    
                     Button0_Click(sender, e);
                     break;
                 case Key.NumPad1:
@@ -437,28 +490,13 @@ namespace Calculator___material
 
         }
 
-        private void ButtonRoot_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+        
         private void ButtonHelp_Click(object sender, RoutedEventArgs e)
         {
-            
+
             HelpWindow helpWindow = new HelpWindow();
             helpWindow.ShowDialog();
 
         }
-        private void ButtonModulo_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void ButtonMod_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
     }
-
-
 }
