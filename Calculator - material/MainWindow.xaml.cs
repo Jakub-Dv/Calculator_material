@@ -15,8 +15,8 @@ namespace Calculator___material
         private bool isDecimal = false;
         private int decimalCount = 0;
         private string prevEqv; //used for idetification of previous equalization
-        Mathematics.Operations Math = new Mathematics.Operations();
-        
+        Mathematics.Math Math = new Mathematics.Math();
+
         public MainWindow()
         {
             InitializeComponent();
