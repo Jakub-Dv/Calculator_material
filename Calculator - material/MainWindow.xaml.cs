@@ -15,165 +15,86 @@ namespace Calculator___material
         private bool isDecimal = false;
         private int decimalCount = 0;
         private string prevEqv; //used for idetification of previous equalization
-        Mathematics.Operations Math = new Mathematics.Operations();
+        Mathematics.Math Math = new Mathematics.Math();
         
         public MainWindow()
         {
             InitializeComponent();
             InputBox.Text = "0";
+            HistoryBox_Text.Text = "History Box:";
+        }
+
+
+        private void Number_Ctor(int number)
+        {
+            //Keyboard.Focus(ButtonEqv);
+            if (prevEqv == "eqv")
+            {
+                number1 = 0;
+                prevEqv = default(string);
+            }
+            if (!isDecimal)
+            {
+                number1 = number1 * 10 + number;
+            }
+            else
+            {
+                decimalCount++;
+                number1 = number1 + Math.Pow(10, -decimalCount) * number;
+            }
+            
+            string toBePrinted = number1.ToString();
+            InputBox.Text = toBePrinted;
         }
 
         private void Button0_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 0;
-            }
-            else
-            {
-                
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 0;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(0);
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 1;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 1;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
-
+            Number_Ctor(1);
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 2;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 2;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(2);
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 3;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 3;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(3);
         }
 
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 4;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 4;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(4);
         }
 
         private void Button5_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 5;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 5;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(5);
         }
 
         private void Button6_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 6;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 6;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(6);
         }
 
         private void Button7_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 7;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 7;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(7);
         }
 
         private void Button8_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 8;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 8;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(8);
         }
 
         private void Button9_Click(object sender, RoutedEventArgs e)
         {
-            if (!isDecimal)
-            {
-                number1 = number1 * 10 + 9;
-            }
-            else
-            {
-                decimalCount++;
-                number1 = number1 + Math.Pow(10, -decimalCount) * 9;
-            }
-            string toBePrinted = number1.ToString();
-            InputBox.Text = toBePrinted;
+            Number_Ctor(9);
         }
 
         private void Defaults()
@@ -271,7 +192,7 @@ namespace Calculator___material
                     break;
             }
             HistoryBox.Text = OutputBox.Text + "\n" + HistoryBox.Text;
-            number1 = 0;
+            number1 = number2;
             prevEqv = "eqv";
         }
 
@@ -403,7 +324,10 @@ namespace Calculator___material
         {
             SignBox.Text = "√";
             InputBox.Text = "0";
-
+            if (prevEqv == "eqv")
+            {
+                number1 = 0;
+            }
             Operations(prevEqv);
             Defaults();
 

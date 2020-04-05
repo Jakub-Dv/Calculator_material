@@ -64,3 +64,7 @@ C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Ca
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\HelpWindow.g.cs
 C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\HelpWindow.baml
 C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\Mathematics.dll
+C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\Calculator - material.exe.manifest
+C:\Programming\Calculator\Calculator_material\Calculator - material\bin\Debug\Calculator - material.application
+C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.exe.manifest
+C:\Programming\Calculator\Calculator_material\Calculator - material\obj\Debug\Calculator - material.application

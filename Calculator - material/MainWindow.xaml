@@ -17,8 +17,7 @@
         WindowStartupLocation="CenterOwner" ResizeMode="CanResizeWithGrip"
         Keyboard.KeyDown="InputBox_KeyDown"
         
-        
-        >
+>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -42,7 +41,7 @@
         </Grid.RowDefinitions>
 
         <!-- Numbers -->
-        <Button x:Name="Button7" Grid.Row="2" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.45,0.45" Click="Button7_Click">
+        <Button x:Name="Button7" Grid.Row="2" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.45,0.45" Click="Button7_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -52,7 +51,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 7
         </Button>
-        <Button x:Name="Button8" Grid.Row="2" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button8_Click">
+        <Button x:Name="Button8" Grid.Row="2" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button8_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -62,7 +61,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 8
         </Button>
-        <Button x:Name="Button9" Grid.Row="2" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button9_Click">
+        <Button x:Name="Button9" Grid.Row="2" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button9_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -72,7 +71,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 9
         </Button>
-        <Button x:Name="Button4" Grid.Row="3" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button4_Click">
+        <Button x:Name="Button4" Grid.Row="3" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button4_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -82,7 +81,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 4
         </Button>
-        <Button x:Name="Button5" Grid.Row="3" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button5_Click">
+        <Button x:Name="Button5" Grid.Row="3" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button5_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -92,7 +91,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 5
         </Button>
-        <Button x:Name="Button6" Grid.Row="3" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button6_Click">
+        <Button x:Name="Button6" Grid.Row="3" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button6_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -102,7 +101,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 6
         </Button>
-        <Button x:Name="Button2" Grid.Row="4" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button2_Click">
+        <Button x:Name="Button2" Grid.Row="4" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button2_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -112,7 +111,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 2
         </Button>
-        <Button x:Name="Button1" Grid.Row="4" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button1_Click">
+        <Button x:Name="Button1" Grid.Row="4" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button1_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -122,7 +121,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 1
         </Button>
-        <Button x:Name="Button3" Grid.Row="4" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.45,0.45" Click="Button3_Click">
+        <Button x:Name="Button3" Grid.Row="4" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.45,0.45" Click="Button3_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -132,7 +131,7 @@
                 </TransformGroup>
             </Button.RenderTransform> 3
         </Button>
-        <Button x:Name="Button0" Grid.Row="5" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button0_Click">
+        <Button x:Name="Button0" Grid.Row="5" Grid.Column="4" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="Button0_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -145,7 +144,7 @@
 
         <!-- Maths buttons -->
 
-        <Button x:Name="ButtonAdd" Grid.Row="2" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.45,0.45" Click="ButtonAdd_Click">
+        <Button x:Name="ButtonAdd" Grid.Row="2" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.45,0.45" Click="ButtonAdd_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -155,7 +154,7 @@
                 </TransformGroup>
             </Button.RenderTransform> +
         </Button>
-        <Button x:Name="ButtonSub" Grid.Row="3" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonSub_Click">
+        <Button x:Name="ButtonSub" Grid.Row="3" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonSub_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -165,7 +164,7 @@
                 </TransformGroup>
             </Button.RenderTransform> −
         </Button>
-        <Button x:Name="ButtonDiv" Grid.Row="4" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonDiv_Click" Content="÷">
+        <Button x:Name="ButtonDiv" Grid.Row="4" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonDiv_Click" Content="÷" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -175,7 +174,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="ButtonMul" Grid.Row="5" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonMul_Click" Content="×">
+        <Button x:Name="ButtonMul" Grid.Row="5" Grid.Column="6" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonMul_Click" Content="×" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -185,7 +184,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="ButtonEqv" Grid.Row="5" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonEqv_Click" >
+        <Button x:Name="ButtonEqv" Grid.Row="5" Grid.Column="5" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="30" RenderTransformOrigin="0.5,0.5" Click="ButtonEqv_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -195,7 +194,7 @@
                 </TransformGroup>
             </Button.RenderTransform> =
         </Button>
-        <Button x:Name="ButtonDec" Grid.Row="5" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="ButtonDec_Click">
+        <Button x:Name="ButtonDec" Grid.Row="5" Grid.Column="3" Height="Auto" materialDesign:ButtonAssist.CornerRadius="50" Background="BlueViolet" FontSize="40" RenderTransformOrigin="0.5,0.5" Click="ButtonDec_Click" Focusable="False">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
@@ -204,30 +203,31 @@
         </Button>
         <!-- Other Buttons -->
 
-        <Button x:Name="ButtonC" Grid.Row="2" Grid.Column="2" Height="Auto" RenderTransformOrigin="0.5,0.5" Click="ButtonC_Click" FontSize="20">C</Button>
-        <Button x:Name="ButtonCE" Grid.Row="3" Grid.Column="2" Height="Auto" Click="ButtonCE_Click" FontSize="20">CE</Button>
-        <Button x:Name="ButtonFac" Grid.Row="4" Grid.Column="2" Height="Auto" Content="!" FontSize="30" Click="ButtonFac_Click"></Button>
-        <Button x:Name="ButtonPow" Grid.Row="5" Grid.Column="2" Height="Auto" Content="^" FontSize="30" Click="ButtonPow_Click"></Button>
-        <Button x:Name="ButtonRoot" Grid.Row="4" Grid.Column="1" Height="Auto" Content="√" FontSize="30" Click="ButtonRoot_Click" ></Button>
-        <Button x:Name="ButtonMod" Grid.Row="5" Grid.Column="1" Height="Auto" Content="%" FontSize="30" Click="ButtonMod_Click" ></Button>
+        <Button x:Name="ButtonC" Grid.Row="2" Grid.Column="2" Height="Auto" RenderTransformOrigin="0.5,0.5" Click="ButtonC_Click" FontSize="20" Focusable="False">C</Button>
+        <Button x:Name="ButtonCE" Grid.Row="3" Grid.Column="2" Height="Auto" Click="ButtonCE_Click" FontSize="20" Focusable="False">CE</Button>
+        <Button x:Name="ButtonFac" Grid.Row="4" Grid.Column="2" Height="Auto" Content="!" FontSize="30" Click="ButtonFac_Click" Focusable="False"></Button>
+        <Button x:Name="ButtonPow" Grid.Row="5" Grid.Column="2" Height="Auto" Content="^" FontSize="30" Click="ButtonPow_Click" Focusable="False"></Button>
+        <Button x:Name="ButtonRoot" Grid.Row="4" Grid.Column="1" Height="Auto" Content="√" FontSize="30" Click="ButtonRoot_Click" Focusable="False"></Button>
+        <Button x:Name="ButtonMod" Grid.Row="5" Grid.Column="1" Height="Auto" Content="%" FontSize="30" Click="ButtonMod_Click" Focusable="False"></Button>
         
         <!-- Help Button -->
-        <Button x:Name="ButtonHelp" Grid.Row="4" Grid.Column="0" Grid.RowSpan="2"  Height="Auto" Content="?" FontSize="30" Click="ButtonHelp_Click" Background="LightYellow" Foreground="BlueViolet" ></Button>
+        <Button x:Name="ButtonHelp" Grid.Row="4" Grid.Column="0" Grid.RowSpan="2"  Height="Auto" Content="?" FontSize="30" Click="ButtonHelp_Click" Background="LightYellow" Foreground="BlueViolet" Focusable="False"></Button>
         
         <!-- Input box -->
-        <Border Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="5" Background="Beige"></Border>
-        <TextBox x:Name="InputBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="45" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="5" IsReadOnly="True" RenderTransformOrigin="0,0" Margin="0,0,49,0"/>
+        <Border Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="5" Background="Beige" Focusable="False"></Border>
+        <TextBox x:Name="InputBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="45" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="5" IsReadOnly="True" RenderTransformOrigin="0,0" Margin="0,0,49,0" Focusable="False"/>
 
         <!-- Output box -->
-        <Border Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="5" Background="FloralWhite"></Border>
-        <TextBox x:Name="OutputBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="45" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="5" IsReadOnly="True" RenderTransformOrigin="0,0" Margin="0,0,49,0" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" ></TextBox>
+        <Border Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="5" Background="FloralWhite" Focusable="False"></Border>
+        <TextBox x:Name="OutputBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="45" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="5" IsReadOnly="True" RenderTransformOrigin="0,0" Margin="0,0,49,0" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" Focusable="False"></TextBox>
 
         <!-- History box -->
-        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DarkOrange"/>
-        <TextBox x:Name="HistoryBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" IsReadOnly="True" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" AllowDrop="True" Height="375" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" Margin="10,0"/>
-
+        <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="4" Background="DarkOrange" Focusable="False"/>
+        <TextBox x:Name="HistoryBox" TextAlignment="Right" VerticalAlignment="Bottom" BorderThickness="0" FontSize="20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="4" IsReadOnly="True" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" AllowDrop="True" Height="347" TextWrapping="Wrap" AcceptsReturn="True" Foreground="WhiteSmoke" Margin="10,0" Focusable="False"/>
+        <TextBox x:Name="HistoryBox_Text" TextAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" BorderThickness="0" Grid.ColumnSpan="2" IsReadOnly="True" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" Text="" Margin="10,0" Height="30" FontSize="20" AllowDrop="False" Focusable="False"/>
+        
         <!-- Sign box -->
-        <TextBox x:Name="SignBox" HorizontalAlignment="Center" Height="180" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="50" Grid.Column="6" Margin="49,0,0,10" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" FontSize="30" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.547,0.489" FontWeight="Bold" materialDesign:TextFieldAssist.DecorationVisibility="Hidden"/>
+        <TextBox x:Name="SignBox" HorizontalAlignment="Center" Height="180" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="50" Grid.Column="6" Margin="49,0,0,10" Grid.RowSpan="2" IsReadOnly="True" TextAlignment="Center" FontSize="30" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.547,0.489" FontWeight="Bold" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" Focusable="False"/>
     </Grid>
 
 </Window>
