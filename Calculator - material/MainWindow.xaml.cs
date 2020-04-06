@@ -99,6 +99,8 @@ namespace Calculator___material
 
         private void Defaults()
         {
+                //System.Math.Round(number2 * System.Math.Pow(10, -decimalCount + 1));
+                //number2 = number2 * System.Math.Pow(10, decimalCount - 1);
             OutputBox.Text = number2.ToString();
             number1 = default(double);
             decimalCount = 0;
