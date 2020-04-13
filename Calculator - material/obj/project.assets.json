@@ -173,9 +173,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\Calculator - material.csproj",
-      "projectName": "Calculator - material",
-      "projectPath": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\Calculator - material.csproj",
+      "projectUniqueName": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\Calculator_material.csproj",
+      "projectName": "Calculator_material",
+      "projectPath": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\Calculator_material.csproj",
       "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
       "outputPath": "C:\\Programming\\Calculator\\Calculator_material\\Calculator - material\\obj\\",
       "projectStyle": "PackageReference",

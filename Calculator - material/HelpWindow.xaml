@@ -5,13 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator___material"
         mc:Ignorable="d"
-        Height="400" Width="200"
-        WindowStartupLocation="Manual" ResizeMode="NoResize" 
-        
+        Height="345" Width="380"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        WindowStartupLocation="CenterScreen"  ResizeMode="NoResize"
         ShowInTaskbar="True"
+        Title="Help window"
         
         WindowStyle="ThreeDBorderWindow">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0" BorderBrush="Black" BorderThickness="0,0,2,0" />
+        <Border Grid.Column="1" BorderBrush="Black" BorderThickness="2,0,0,0" />
+
+        <TextBlock x:Name="Left" Grid.Column="0" Grid.Row="0" TextAlignment="Left" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" AllowDrop="True" FontSize="25" Margin="10,0,0,0"/>
+        <TextBlock x:Name="Right" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" TextAlignment="Left" materialDesign:TextFieldAssist.DecorationVisibility="Hidden" AllowDrop="True" FontSize="25" Margin="10,0,0,0"/>
 
     </Grid>
 </Window>

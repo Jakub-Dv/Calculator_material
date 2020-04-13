@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculator - material</name>
+    </assembly>
+    <members>
+        <member name="T:Calculator___material.App">
+            -------------------------------------------------------------------------------------------------
+             @class  App
+            
+             @brief  Interaction logic for App.xaml
+            
+             @author Jakub
+             @date   08.04.2020
+            -------------------------------------------------------------------------------------------------
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Calculator___material.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Calculator___material.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Calculator___material.HelpWindow">
+            <summary>
+            Interaction logic for HelpWindow.xaml
+            </summary>
+            <summary>
+            HelpWindow
+            </summary>
+        </member>
+        <member name="M:Calculator___material.HelpWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calculator___material.MainWindow">
+            -------------------------------------------------------------------------------------------------
+             @class  MainWindow
+            
+             @brief  The application's main form.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:Calculator___material.MainWindow.number1">
+            @brief  Default variable for number creating.
+        </member>
+        <member name="F:Calculator___material.MainWindow.number2">
+            @brief  Default variable for result interpretation.
+        </member>
+        <member name="F:Calculator___material.MainWindow.isDecimal">
+            @brief  True if is decimal, false if not.
+        </member>
+        <member name="F:Calculator___material.MainWindow.decimalCount">
+            @brief  Number of decimals.
+        </member>
+        <member name="F:Calculator___material.MainWindow.prevEqv">
+            @brief  It is used for idetification of previous equalization.
+        </member>
+        <member name="F:Calculator___material.MainWindow.Math">
+            @brief  The mathematics library.
+        </member>
+        <member name="M:Calculator___material.MainWindow.#ctor">
+            -------------------------------------------------------------------------------------------------
+             @fn public MainWindow()
+            
+             @brief  Default constructor.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Number_Ctor(System.Int32)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Number_Ctor(int number)
+            
+             @brief  Number constructor.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  number  Number of.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button0_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button0_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button0 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button1_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button1 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button2_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button2 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button3_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button3_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button3 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button4_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button4_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button4 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button5_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button5_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button5 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button6_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button6_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button6 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button7_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button7_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button7 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button8_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button8_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button8 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button9_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Button9_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by Button9 for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Defaults">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Defaults()
+            
+             @brief  Defaults this.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Operations(System.String)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void Operations(string prevEqv)
+            
+             @brief  Operations.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  prevEqv The previous eqv.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonEqv_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonEqv_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonEqv for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonCE_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonCE_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonCE for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonAdd_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonAdd_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonAdd for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonSub_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonSub_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonSub for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonMul_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonMul_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonMul for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonDiv_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonDiv_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonDiv for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonC_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonC_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonC for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonDec_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonDec_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonDec for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonPow_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonPow_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonPow for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonFac_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonFac_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonFac for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonRoot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonRoot_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonRoot for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonMod_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonMod_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonMod for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.InputBox_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void InputBox_KeyDown(object sender, KeyEventArgs e)
+            
+             @brief  Event handler. Called by InputBox for key down events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Key event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonHelp_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             @fn private void ButtonHelp_Click(object sender, RoutedEventArgs e)
+            
+             @brief  Event handler. Called by ButtonHelp for click events.
+            
+             @author Jakub
+             @date   09.04.2020
+            
+             @param  sender  Source of the event.
+             @param  e       Routed event information.
+            
+             ### remarks Jakub, 08.04.2020.
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calculator___material.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Calculator___material.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Calculator___material.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

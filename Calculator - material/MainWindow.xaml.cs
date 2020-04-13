@@ -1,29 +1,77 @@
-﻿using System.Windows;
+﻿///-------------------------------------------------------------------------------------------------
+/// @file   MainWindow.xaml.cs.
+///
+/// @brief  Implements the main window.xaml class
+///-------------------------------------------------------------------------------------------------
+
+using System.Reflection;
+using System.Windows;
 using System.Windows.Input;
 
 namespace Calculator___material
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    
+    ///-------------------------------------------------------------------------------------------------
+    /// @class  MainWindow
+    ///
+    /// @brief  The application's main form.
+    ///
+    /// @author Jakub
+    /// @date   09.04.2020
+    ///
+    /// ### remarks Jakub, 08.04.2020.
+    ///-------------------------------------------------------------------------------------------------
+
     public partial class MainWindow : Window
     {
         
+        /// @brief  Default variable for number creating.
         private double number1 = 0;
+
+        /// @brief  Default variable for result interpretation.
         private double number2 = 0;
+
+        /// @brief  True if is decimal, false if not.
         private bool isDecimal = false;
+
+        /// @brief  Number of decimals.
         private int decimalCount = 0;
-        private string prevEqv; //used for idetification of previous equalization
+
+        /// @brief  It is used for idetification of previous equalization.
+        private string prevEqv;
+
+        /// @brief  The mathematics library.
         Mathematics.Math Math = new Mathematics.Math();
-        
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn public MainWindow()
+        ///
+        /// @brief  Default constructor.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         public MainWindow()
         {
             InitializeComponent();
             InputBox.Text = "0";
-            HistoryBox_Text.Text = "History Box:";
+            HistoryBox_Text.Text = "History:";
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Number_Ctor(int number)
+        ///
+        /// @brief  Number constructor.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  number  Number of.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void Number_Ctor(int number)
         {
@@ -47,65 +95,231 @@ namespace Calculator___material
             InputBox.Text = toBePrinted;
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button0_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button0 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void Button0_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(0);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button1_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button1 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(1);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button2_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button2 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(2);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button3_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button3 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(3);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button4_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button4 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(4);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button5_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button5 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void Button5_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(5);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button6_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button6 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void Button6_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(6);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button7_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button7 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void Button7_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(7);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button8_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button8 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void Button8_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(8);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Button9_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by Button9 for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void Button9_Click(object sender, RoutedEventArgs e)
         {
             Number_Ctor(9);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Defaults()
+        ///
+        /// @brief  Defaults this.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void Defaults()
         {
                 //System.Math.Round(number2 * System.Math.Pow(10, -decimalCount + 1));
                 //number2 = number2 * System.Math.Pow(10, decimalCount - 1);
+            
+            
             OutputBox.Text = number2.ToString();
             number1 = default(double);
             decimalCount = 0;
             isDecimal = false;
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void Operations(string prevEqv)
+        ///
+        /// @brief  Operations.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  prevEqv The previous eqv.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void Operations(string prevEqv)
         {
@@ -145,6 +359,20 @@ namespace Calculator___material
             }
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonEqv_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonEqv for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void ButtonEqv_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "=";
@@ -152,38 +380,24 @@ namespace Calculator___material
             {
                 case "add":
                     number2 = Math.Sum(number2, number1);
-                    OutputBox.Text = number2.ToString();
-                    InputBox.Clear();
                     break;
                 case "sub":
                     number2 = Math.Sub(number2, number1);
-                    OutputBox.Text = number2.ToString();
-                    InputBox.Clear();
                     break;
                 case "mul":
                     number2 = Math.Mul(number2, number1);
-                    OutputBox.Text = number2.ToString();
-                    InputBox.Clear();
                     break;
                 case "div":
                     number2 = Math.Div(number2, number1);
-                    OutputBox.Text = number2.ToString();
-                    InputBox.Clear();
                     break;
                 case "pow":
                     number2 = Math.Pow(number2, number1);
-                    OutputBox.Text = number2.ToString();
-                    InputBox.Clear();
                     break;
                 case "sqrt":
                     number2 = Math.Sqrt(number1, number2);
-                    OutputBox.Text = number2.ToString();
-                    InputBox.Clear();
                     break;
                 case "mod":
                     number2 = Math.Mod(number2, number1);
-                    OutputBox.Text = number2.ToString();
-                    InputBox.Clear();
                     break;
 
 
@@ -193,10 +407,29 @@ namespace Calculator___material
                 default:
                     break;
             }
+
+            OutputBox.Text = number2.ToString();
+            InputBox.Clear();
+
             HistoryBox.Text = OutputBox.Text + "\n" + HistoryBox.Text;
+            
             number1 = number2;
             prevEqv = "eqv";
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonCE_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonCE for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void ButtonCE_Click(object sender, RoutedEventArgs e)
         {
@@ -211,6 +444,20 @@ namespace Calculator___material
             
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonAdd_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonAdd for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "+";
@@ -221,6 +468,20 @@ namespace Calculator___material
 
             prevEqv = "add";
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonSub_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonSub for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void ButtonSub_Click(object sender, RoutedEventArgs e)
         {
@@ -233,7 +494,19 @@ namespace Calculator___material
             prevEqv = "sub";
         }
 
-        
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonMul_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonMul for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void ButtonMul_Click(object sender, RoutedEventArgs e)
         {
@@ -246,6 +519,20 @@ namespace Calculator___material
             prevEqv = "mul";
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonDiv_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonDiv for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void ButtonDiv_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "÷";
@@ -256,6 +543,20 @@ namespace Calculator___material
 
             prevEqv = "div";
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonC_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonC for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void ButtonC_Click(object sender, RoutedEventArgs e)
         {
@@ -290,6 +591,20 @@ namespace Calculator___material
             }
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonDec_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonDec for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void ButtonDec_Click(object sender, RoutedEventArgs e)
         {
             if (!isDecimal)
@@ -298,6 +613,20 @@ namespace Calculator___material
             }
             isDecimal = true;
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonPow_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonPow for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void ButtonPow_Click(object sender, RoutedEventArgs e)
         {
@@ -310,6 +639,20 @@ namespace Calculator___material
             prevEqv = "pow";
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonFac_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonFac for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void ButtonFac_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "!";
@@ -321,6 +664,20 @@ namespace Calculator___material
 
             prevEqv = default(string);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonRoot_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonRoot for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void ButtonRoot_Click(object sender, RoutedEventArgs e)
         {
@@ -336,6 +693,20 @@ namespace Calculator___material
             prevEqv = "sqrt";
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonMod_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonMod for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void ButtonMod_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "%";
@@ -346,6 +717,20 @@ namespace Calculator___material
 
             prevEqv = "mod";
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void InputBox_KeyDown(object sender, KeyEventArgs e)
+        ///
+        /// @brief  Event handler. Called by InputBox for key down events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Key event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
 
         private void InputBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -416,7 +801,20 @@ namespace Calculator___material
 
         }
 
-        
+        ///-------------------------------------------------------------------------------------------------
+        /// @fn private void ButtonHelp_Click(object sender, RoutedEventArgs e)
+        ///
+        /// @brief  Event handler. Called by ButtonHelp for click events.
+        ///
+        /// @author Jakub
+        /// @date   09.04.2020
+        ///
+        /// @param  sender  Source of the event.
+        /// @param  e       Routed event information.
+        ///
+        /// ### remarks Jakub, 08.04.2020.
+        ///-------------------------------------------------------------------------------------------------
+
         private void ButtonHelp_Click(object sender, RoutedEventArgs e)
         {
 

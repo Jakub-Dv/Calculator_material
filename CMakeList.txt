@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project("Calculator - material" VERSION 0.1.0 LANGUAGES CSharp)
+
+include(CSharpUtilities)
+
+add_subdirectory(Calculator - material)
