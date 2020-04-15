@@ -1,4 +1,3 @@
-<<<<<<< HEAD:src/Calculator_material.sln
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
@@ -24,36 +23,3 @@ Global
 		SolutionGuid = {0DFE4496-041D-42B9-8CC2-2463D996DE41}
 	EndGlobalSection
 EndGlobal
-=======
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator - material", "Calculator - material\Calculator - material.csproj", "{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibTests", "MathLibTests\MathLibTests.csproj", "{52CD8F89-2C3D-40E2-BDE3-E813234D948A}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0DFE4496-041D-42B9-8CC2-2463D996DE41}
-	EndGlobalSection
-EndGlobal
->>>>>>> c9d3714... TESTS:Calculator - material.sln
