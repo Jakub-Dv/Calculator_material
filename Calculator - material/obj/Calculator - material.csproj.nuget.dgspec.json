@@ -27,7 +27,11 @@
         },
         "frameworks": {
           "net472": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj": {
+                "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj"
+              }
+            }
           }
         }
       },
@@ -55,6 +59,17 @@
         "win-x86": {
           "#import": []
         }
+      }
+    },
+    "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj",
+        "projectName": "Mathematics",
+        "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

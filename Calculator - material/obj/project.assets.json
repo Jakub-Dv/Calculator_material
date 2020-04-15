@@ -25,6 +25,15 @@
         "build": {
           "build/MaterialDesignThemes.targets": {}
         }
+      },
+      "Mathematics/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Mathematics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
@@ -50,6 +59,15 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "Mathematics/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Mathematics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.dll": {}
         }
       }
     },
@@ -77,6 +95,15 @@
         "build": {
           "build/MaterialDesignThemes.targets": {}
         }
+      },
+      "Mathematics/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Mathematics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
@@ -102,6 +129,15 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "Mathematics/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Mathematics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mathematics.dll": {}
         }
       }
     }
@@ -159,12 +195,18 @@
         "materialdesignthemes.3.0.1.nupkg.sha512",
         "materialdesignthemes.nuspec"
       ]
+    },
+    "Mathematics/1.0.0": {
+      "type": "project",
+      "path": "../src/Mathematics/Mathematics.csproj",
+      "msbuildProject": "../src/Mathematics/Mathematics.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "MaterialDesignColors >= 1.2.2",
-      "MaterialDesignThemes >= 3.0.1"
+      "MaterialDesignThemes >= 3.0.1",
+      "Mathematics >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -193,7 +235,11 @@
       },
       "frameworks": {
         "net472": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj": {
+              "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj"
+            }
+          }
         }
       }
     },

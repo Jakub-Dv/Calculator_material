@@ -12,3 +12,4 @@ C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\obj\Debug\MathLibTests.dll
 C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\obj\Debug\MathLibTests.pdb
 C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\obj\Debug\MathLibTests.csprojAssemblyReference.cache
 C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Mathematics.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Mathematics.pdb
