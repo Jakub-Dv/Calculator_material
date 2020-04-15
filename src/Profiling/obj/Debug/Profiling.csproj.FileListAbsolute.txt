@@ -14,5 +14,3 @@ C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\obj\Debug\Profiling.csprojAss
 C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\obj\Debug\Profiling.csproj.CopyComplete
 C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\obj\Debug\Profiling.exe
 C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\obj\Debug\Profiling.pdb
-C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\bin\Debug\Mathematics.dll
-C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\bin\Debug\Mathematics.pdb

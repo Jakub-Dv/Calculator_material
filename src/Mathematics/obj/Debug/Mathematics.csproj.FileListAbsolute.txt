@@ -2,7 +2,3 @@ C:\Users\jarek\source\repos\Mathematics\bin\Debug\Mathematics.dll
 C:\Users\jarek\source\repos\Mathematics\bin\Debug\Mathematics.pdb
 C:\Users\jarek\source\repos\Mathematics\obj\Debug\Mathematics.dll
 C:\Users\jarek\source\repos\Mathematics\obj\Debug\Mathematics.pdb
-C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\bin\Debug\Mathematics.dll
-C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\bin\Debug\Mathematics.pdb
-C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\obj\Debug\Mathematics.dll
-C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\obj\Debug\Mathematics.pdb
