@@ -87,4 +87,3 @@ C:\IVS_PROJEKT_2\Calculator_material\Calculator - material\obj\Debug\Calculator 
 C:\IVS_PROJEKT_2\Calculator_material\Calculator - material\obj\Debug\Calculator - material.csproj.CopyComplete
 C:\IVS_PROJEKT_2\Calculator_material\Calculator - material\obj\Debug\Calculator - material.exe
 C:\IVS_PROJEKT_2\Calculator_material\Calculator - material\obj\Debug\Calculator - material.pdb
-C:\IVS_PROJEKT_2\Calculator_material\Calculator - material\bin\Debug\Mathematics.pdb
