@@ -72,7 +72,12 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD:src/Calculator_material/Calculator_material.csproj
     <Reference Include="Mathematics">
+=======
+    <Reference Include="Mathematics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+>>>>>>> c9d3714... TESTS:Calculator - material/Calculator - material.csproj
       <HintPath>.\Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="System" />
