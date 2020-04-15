@@ -1,0 +1,15 @@
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\MathLibTests.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\MathLibTests.pdb
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\obj\Debug\MathLibTests.csproj.CopyComplete
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\obj\Debug\MathLibTests.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\obj\Debug\MathLibTests.pdb
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\obj\Debug\MathLibTests.csprojAssemblyReference.cache
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Mathematics.dll
+C:\IVS_PROJEKT_2\Calculator_material\MathLibTests\bin\Debug\Mathematics.pdb

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mathematics", "Mathematics.csproj", "{68560B14-2052-4C38-8EDB-E4084A7D17AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibTests", "MathLibTests\MathLibTests.csproj", "{52CD8F89-2C3D-40E2-BDE3-E813234D948A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mathematics", "src\Mathematics\Mathematics.csproj", "{68560B14-2052-4C38-8EDB-E4084A7D17AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profiling", "src\Profiling\Profiling.csproj", "{55AA7FE7-8708-4E19-A8C8-50E618584DDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD:src/Mathematics/Mathematics.sln
+=======
+		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B310D92E-E8A3-4AF5-A86E-4F79A01D245F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CD8F89-2C3D-40E2-BDE3-E813234D948A}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> J2:Calculator - material.sln
+		{68560B14-2052-4C38-8EDB-E4084A7D17AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68560B14-2052-4C38-8EDB-E4084A7D17AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68560B14-2052-4C38-8EDB-E4084A7D17AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68560B14-2052-4C38-8EDB-E4084A7D17AF}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD:src/Mathematics/Mathematics.sln
+=======
+		{55AA7FE7-8708-4E19-A8C8-50E618584DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AA7FE7-8708-4E19-A8C8-50E618584DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AA7FE7-8708-4E19-A8C8-50E618584DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AA7FE7-8708-4E19-A8C8-50E618584DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> J2:Calculator - material.sln
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF5DBA3E-13EA-4945-AB84-D60C87B10CDA}
+	EndGlobalSection
+EndGlobal

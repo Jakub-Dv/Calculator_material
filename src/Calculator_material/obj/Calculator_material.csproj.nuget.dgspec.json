@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\Calculator_material.csproj": {}
+  },
+  "projects": {
+    "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\Calculator_material.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\Calculator_material.csproj",
+        "projectName": "Calculator_material",
+        "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\Calculator_material.csproj",
+        "packagesPath": "C:\\Users\\jarek\\.nuget\\packages\\",
+        "outputPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\jarek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj": {
+                "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj",
+        "projectName": "Mathematics",
+        "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
