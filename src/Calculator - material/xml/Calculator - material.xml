@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculator - material</name>
+    </assembly>
+    <members>
+        <member name="T:Calculator___material.App">
+            -------------------------------------------------------------------------------------------------
+             <summary> Interaction logic for App.xaml.</summary>
+            -------------------------------------------------------------------------------------------------
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Calculator___material.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Calculator___material.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Calculator___material.HelpWindow">
+            -------------------------------------------------------------------------------------------------
+             <summary> Form for viewing the help.</summary>
+            -------------------------------------------------------------------------------------------------
+            <summary>
+            HelpWindow
+            </summary>
+        </member>
+        <member name="M:Calculator___material.HelpWindow.#ctor">
+            -------------------------------------------------------------------------------------------------
+             <summary> Default constructor.</summary>
+             <param name="Left"> Text inicialization for left column in help window.</param>
+             <param name="Right"> Text inicialization for right column in help window.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.HelpWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calculator___material.MainWindow">
+            -------------------------------------------------------------------------------------------------
+             <summary> The application's main form.</summary>
+            
+             ### <author> Jakub Dvorak</author>
+            
+             ### <date> 14.04.2020</date>
+            -------------------------------------------------------------------------------------------------
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:Calculator___material.MainWindow.number1">
+            -------------------------------------------------------------------------------------------------
+             <summary> Default variable for number creating.</summary>
+             ### <param name="number1"> Default variable for number creating.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="F:Calculator___material.MainWindow.number2">
+            -------------------------------------------------------------------------------------------------
+             <summary> Default variable for result interpretation.</summary>
+             ### <param name="number2"> Default variable for result interpretation.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="F:Calculator___material.MainWindow.isDecimal">
+            -------------------------------------------------------------------------------------------------
+             <summary> True if is decimal, false if not.</summary>
+             ### <param name="isDecimal"> True if is decimal, false if not.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="F:Calculator___material.MainWindow.decimalCount">
+            -------------------------------------------------------------------------------------------------
+             <summary> Number of decimals.</summary>
+             ### <param name="decimalCount"> Number of decimals.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="F:Calculator___material.MainWindow.prevEqv">
+            -------------------------------------------------------------------------------------------------
+             <summary> Used for idetification of previous equalization.</summary>
+             ### <param name="prevEqv"> Used for idetification of previous equalization.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="F:Calculator___material.MainWindow.Math">
+            <summary> The mathematics library.</summary>
+        </member>
+        <member name="M:Calculator___material.MainWindow.#ctor">
+            -------------------------------------------------------------------------------------------------
+             <summary> Default constructor.</summary>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Number_Ctor(System.Int32)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Number constructor.</summary>
+            
+             <param name="number"> Number passed by number buttons.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button0_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "0" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "1" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "2" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button3_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "3" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button4_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "4" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button5_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "5" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button6_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "6" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button7_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "7" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button8_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "8" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Button9_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "9" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Defaults">
+            -------------------------------------------------------------------------------------------------
+             <summary> Sets variables to default.</summary>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.Operations(System.String)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Operations chooser.</summary>
+            
+             <param name="prevEqv"> The previous equalization.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonEqv_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "=" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonCE_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "CE" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonAdd_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "+" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonSub_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "-" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonMul_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "×" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonDiv_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "÷" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            
+             ### <author> Jakub</author>
+            
+             ### <date> 09.04.2020</date>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonC_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "C" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonDec_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "," click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonPow_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "^" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonFac_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "!" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonRoot_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "√" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonMod_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "%" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.InputBox_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by Keyboard Input.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Key event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.ButtonHelp_Click(System.Object,System.Windows.RoutedEventArgs)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Event handler. Called by "?" click.</summary>
+            
+             <param name="sender"> Source of the event.</param>
+             <param name="e">      Routed event information.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Calculator___material.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Calculator___material.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Calculator___material.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Calculator___material.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Calculator___material.Properties.Settings">
+            -------------------------------------------------------------------------------------------------
+             <summary> A settings. This class cannot be inherited.</summary>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="F:Calculator___material.Properties.Settings.defaultInstance">
+            <summary> The default instance.</summary>
+        </member>
+        <member name="P:Calculator___material.Properties.Settings.Default">
+            -------------------------------------------------------------------------------------------------
+             <summary> Gets the default.</summary>
+            
+             <value> The default.</value>
+            -------------------------------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>
