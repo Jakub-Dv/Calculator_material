@@ -1,32 +1,82 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿///-------------------------------------------------------------------------------------------------
+// file:	Math.cs
+//
+// summary:	Implements the mathematics class
+///-------------------------------------------------------------------------------------------------
+
+using System;
 
 namespace Mathematics
 {
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary> A mathematics.</summary>
+    ///-------------------------------------------------------------------------------------------------
+
     public class Math
     {
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Sums.</summary>
+        ///
+        /// <param name="number1"> Number of 1s.</param>
+        /// <param name="number2"> Number of 2s.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
+
         public double Sum(double number1, double number2)
         {
             return (number1 + number2);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Subs.</summary>
+        ///
+        /// <param name="minuend">    The minuend.</param>
+        /// <param name="subtrahend"> The subtrahend.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
 
         public double Sub(double minuend, double subtrahend)
         {
             return (minuend - subtrahend);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Muls.</summary>
+        ///
+        /// <param name="multiplicant"> The multiplicant.</param>
+        /// <param name="multiplier">   The multiplier.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
+
         public double Mul(double multiplicant, double multiplier)
         {
             return (multiplicant * multiplier);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Floors.</summary>
+        ///
+        /// <param name="floorize"> The floorize.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
+
         public double Floor(double floorize)
         {
             return System.Math.Floor(floorize);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Divs.</summary>
+        ///
+        /// <param name="divident"> The divident.</param>
+        /// <param name="divisor">  The divisor.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
 
         public double Div(double divident, double divisor)
         {
@@ -39,6 +89,15 @@ namespace Mathematics
             return (divident / divisor);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Mods.</summary>
+        ///
+        /// <param name="divident"> The divident.</param>
+        /// <param name="divisor">  The divisor.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
+
         public double Mod(double divident, double divisor)
         {
             if (divisor == 0)
@@ -46,10 +105,28 @@ namespace Mathematics
             return (divident % divisor);
         }
 
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Pows.</summary>
+        ///
+        /// <param name="basis">    The basis.</param>
+        /// <param name="exponent"> The exponent.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
+
         public double Pow(double basis, double exponent)
         {
             return System.Math.Pow(basis, exponent);
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Sqrts.</summary>
+        ///
+        /// <param name="basis">    The basis.</param>
+        /// <param name="exponent"> The exponent.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
 
         public double Sqrt(double basis, double exponent)
         {
@@ -63,6 +140,14 @@ namespace Mathematics
                 return (System.Math.Pow(basis, exponent));
             }
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Facs.</summary>
+        ///
+        /// <param name="factorial"> The factorial.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
 
         public double Fac(double factorial)
         {
@@ -94,6 +179,14 @@ namespace Mathematics
             return counter;
         }*/
 
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Counts the given array.</summary>
+        ///
+        /// <param name="arr"> The array.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
+
         public double X_count(double[] arr)
         {
             double sum = 0;
@@ -102,6 +195,15 @@ namespace Mathematics
             double result = (1 / Convert.ToDouble(arr.Length)) * sum;
             return result;
         }
+
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Counts.</summary>
+        ///
+        /// <param name="x">   The x coordinate.</param>
+        /// <param name="arr"> The array.</param>
+        ///
+        /// <returns> A double.</returns>
+        ///-------------------------------------------------------------------------------------------------
 
         public double S_count(double x, double[] arr)
         {

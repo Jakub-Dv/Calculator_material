@@ -1,11 +1,28 @@
-﻿using System;
+﻿///-------------------------------------------------------------------------------------------------
+// file:	Program.cs
+//
+// summary:	Implements the program class
+///-------------------------------------------------------------------------------------------------
+
+using System;
 using Mathematics;
 
 namespace Profiling
 {
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary> A program.</summary>
+    ///-------------------------------------------------------------------------------------------------
+
     class Program
     {
+        /// <summary> The mathematics.</summary>
         static Mathematics.Math Math = new Mathematics.Math();
+
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Main entry-point for this application.</summary>
+        ///
+        /// <param name="args"> An array of command-line argument strings.</param>
+        ///-------------------------------------------------------------------------------------------------
 
         static void Main(string[] args)
         {
