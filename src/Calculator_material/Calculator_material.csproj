@@ -69,10 +69,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -168,7 +165,6 @@
     <Resource Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD:src/Calculator_material/Calculator_material.csproj
     <Resource Include="Calculator.ico" />
   </ItemGroup>
   <ItemGroup>
