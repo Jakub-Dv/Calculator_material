@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
 using Mathematics;
 
 namespace Profiling
@@ -27,7 +22,6 @@ namespace Profiling
             else
                 s = 0;
             Console.WriteLine(s);
-            Console.ReadLine();
         }
     }
 }
