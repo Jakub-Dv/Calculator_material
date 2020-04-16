@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Calculator_material\\Calculator_material.csproj": {}
+    "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\Calculator_material.csproj": {}
   },
   "projects": {
-    "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Calculator_material\\Calculator_material.csproj": {
+    "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\Calculator_material.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Calculator_material\\Calculator_material.csproj",
+        "projectUniqueName": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\Calculator_material.csproj",
         "projectName": "Calculator_material",
-        "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Calculator_material\\Calculator_material.csproj",
+        "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\Calculator_material.csproj",
         "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Calculator_material\\obj\\",
+        "outputPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -28,8 +28,8 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Mathematics\\Mathematics.csproj": {
-                "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Mathematics\\Mathematics.csproj"
+              "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Mathematics\\Mathematics.csproj": {
+                "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Mathematics\\Mathematics.csproj"
               }
             }
           }
@@ -61,12 +61,12 @@
         }
       }
     },
-    "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Mathematics\\Mathematics.csproj": {
+    "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Mathematics\\Mathematics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Mathematics\\Mathematics.csproj",
+        "projectUniqueName": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Mathematics\\Mathematics.csproj",
         "projectName": "Mathematics",
-        "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\repo\\src\\Mathematics\\Mathematics.csproj"
+        "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Mathematics\\Mathematics.csproj"
       },
       "frameworks": {
         "net472": {}

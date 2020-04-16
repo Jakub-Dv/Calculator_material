@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mathematics</name>
+    </assembly>
+    <members>
+        <member name="T:Mathematics.Math">
+            -------------------------------------------------------------------------------------------------
+             <summary> A mathematics.</summary>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Sum(System.Double,System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Sums.</summary>
+            
+             <param name="number1"> Number of 1s.</param>
+             <param name="number2"> Number of 2s.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Sub(System.Double,System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Subs.</summary>
+            
+             <param name="minuend">    The minuend.</param>
+             <param name="subtrahend"> The subtrahend.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Mul(System.Double,System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Muls.</summary>
+            
+             <param name="multiplicant"> The multiplicant.</param>
+             <param name="multiplier">   The multiplier.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Floor(System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Floors.</summary>
+            
+             <param name="floorize"> The floorize.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Div(System.Double,System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Divs.</summary>
+            
+             <param name="divident"> The divident.</param>
+             <param name="divisor">  The divisor.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Mod(System.Double,System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Mods.</summary>
+            
+             <param name="divident"> The divident.</param>
+             <param name="divisor">  The divisor.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Pow(System.Double,System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Pows.</summary>
+            
+             <param name="basis">    The basis.</param>
+             <param name="exponent"> The exponent.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Sqrt(System.Double,System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Sqrts.</summary>
+            
+             <param name="basis">    The basis.</param>
+             <param name="exponent"> The exponent.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.Fac(System.Double)">
+            -------------------------------------------------------------------------------------------------
+             <summary> Facs.</summary>
+            
+             <param name="factorial"> The factorial.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.X_count(System.Double[])">
+            -------------------------------------------------------------------------------------------------
+             <summary> Counts the given array.</summary>
+            
+             <param name="arr"> The array.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="M:Mathematics.Math.S_count(System.Double,System.Double[])">
+            -------------------------------------------------------------------------------------------------
+             <summary> Counts.</summary>
+            
+             <param name="x">   The x coordinate.</param>
+             <param name="arr"> The array.</param>
+            
+             <returns> A double.</returns>
+            -------------------------------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

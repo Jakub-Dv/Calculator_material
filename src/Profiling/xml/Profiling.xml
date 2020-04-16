@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Profiling</name>
+    </assembly>
+    <members>
+        <member name="T:Profiling.Program">
+            -------------------------------------------------------------------------------------------------
+             <summary> A program.</summary>
+            -------------------------------------------------------------------------------------------------
+        </member>
+        <member name="F:Profiling.Program.Math">
+            <summary> The mathematics.</summary>
+        </member>
+        <member name="M:Profiling.Program.Main(System.String[])">
+            -------------------------------------------------------------------------------------------------
+             <summary> Main entry-point for this application.</summary>
+            
+             <param name="args"> An array of command-line argument strings.</param>
+            -------------------------------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

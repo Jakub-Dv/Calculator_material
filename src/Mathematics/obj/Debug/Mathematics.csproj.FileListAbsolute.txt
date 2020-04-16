@@ -12,3 +12,9 @@ C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\bin\Debug\Math
 C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\obj\Debug\Mathematics.csproj.CoreCompileInputs.cache
 C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\obj\Debug\Mathematics.dll
 C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\obj\Debug\Mathematics.pdb
+C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\bin\Debug\Mathematics.dll
+C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\bin\Debug\Mathematics.pdb
+C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\obj\Debug\Mathematics.csproj.CoreCompileInputs.cache
+C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\obj\Debug\Mathematics.dll
+C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\obj\Debug\Mathematics.pdb
+C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\bin\Debug\Mathematics.xml

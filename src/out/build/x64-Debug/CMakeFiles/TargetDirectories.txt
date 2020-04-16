@@ -1,2 +1,0 @@
-C:/Programming/Calculator/Odevzdávané repo/repo/src/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Programming/Calculator/Odevzdávané repo/repo/src/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
