@@ -173,9 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mathematics\Mathematics.csproj">
-=======
-    <ProjectReference Include="..\src\Mathematics\Mathematics.csproj">
->>>>>>> J2:Calculator - material/Calculator - material.csproj
       <Project>{68560b14-2052-4c38-8edb-e4084a7d17af}</Project>
       <Name>Mathematics</Name>
     </ProjectReference>
