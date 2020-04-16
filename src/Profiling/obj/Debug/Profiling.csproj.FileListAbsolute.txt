@@ -16,3 +16,13 @@ C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\obj\Debug\Profiling.exe
 C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\obj\Debug\Profiling.pdb
 C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\bin\Debug\Mathematics.dll
 C:\IVS_PROJEKT_2\Calculator_material\src\Profiling\bin\Debug\Mathematics.pdb
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\bin\Debug\Profiling.exe.config
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\bin\Debug\Profiling.exe
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\bin\Debug\Profiling.pdb
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\bin\Debug\Mathematics.dll
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\bin\Debug\Mathematics.pdb
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\obj\Debug\Profiling.csprojAssemblyReference.cache
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\obj\Debug\Profiling.csproj.CoreCompileInputs.cache
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\obj\Debug\Profiling.csproj.CopyComplete
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\obj\Debug\Profiling.exe
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Profiling\obj\Debug\Profiling.pdb

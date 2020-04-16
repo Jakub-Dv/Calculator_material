@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calculator - material.exe" size="235520">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Calculator - material.exe" size="236512">
       <assemblyIdentity name="Calculator - material" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qCkFGHxHJ5tv0jZebKOnrzC47Em6+9UsbfHtK82fm6w=</dsig:DigestValue>
+        <dsig:DigestValue>VK5Vqp1arm70Y87MmMjL1dmoKcjd5Sp1vuiQsHA5d+s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>n8KUB1oIpKO9XXcIkjWye+DDJ+xE3Ny6GfMbi3qNPCU=</dsig:DigestValue>
+        <dsig:DigestValue>shigcnILOjxeiuL7czQQw1I/H89KOE5r6XSmtCNjKNU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

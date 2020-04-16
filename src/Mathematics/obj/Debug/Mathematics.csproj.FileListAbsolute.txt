@@ -7,3 +7,8 @@ C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\bin\Debug\Mathematics.pdb
 C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\obj\Debug\Mathematics.csprojAssemblyReference.cache
 C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\obj\Debug\Mathematics.dll
 C:\IVS_PROJEKT_2\Calculator_material\src\Mathematics\obj\Debug\Mathematics.pdb
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\bin\Debug\Mathematics.dll
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\bin\Debug\Mathematics.pdb
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\obj\Debug\Mathematics.csproj.CoreCompileInputs.cache
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\obj\Debug\Mathematics.dll
+C:\Programming\Calculator\Odevzdávané repo\repo\src\Mathematics\obj\Debug\Mathematics.pdb

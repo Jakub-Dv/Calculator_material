@@ -69,10 +69,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -168,14 +165,10 @@
     <Resource Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD:src/Calculator_material/Calculator_material.csproj
     <Resource Include="Calculator.ico" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mathematics\Mathematics.csproj">
-=======
-    <ProjectReference Include="..\src\Mathematics\Mathematics.csproj">
->>>>>>> J2:Calculator - material/Calculator - material.csproj
       <Project>{68560b14-2052-4c38-8edb-e4084a7d17af}</Project>
       <Name>Mathematics</Name>
     </ProjectReference>
