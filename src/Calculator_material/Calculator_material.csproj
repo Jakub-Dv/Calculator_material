@@ -72,9 +72,6 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mathematics">
-      <HintPath>.\Mathematics.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -169,6 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Calculator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mathematics\Mathematics.csproj">
+      <Project>{68560b14-2052-4c38-8edb-e4084a7d17af}</Project>
+      <Name>Mathematics</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
