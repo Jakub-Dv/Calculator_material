@@ -1,7 +1,8 @@
 ﻿///-------------------------------------------------------------------------------------------------
-// file:	Math.cs
-//
-// summary:	Implements the mathematics class
+/// file:	Math.cs
+/// <author> Jaroslav Kvasnicka </author>
+/// <date> 20.4.2020 </date>
+/// <summary>Implements the mathematics class</summary>	
 ///-------------------------------------------------------------------------------------------------
 
 using System;
@@ -9,13 +10,13 @@ using System;
 namespace Mathematics
 {
     ///-------------------------------------------------------------------------------------------------
-    /// <summary> A mathematics.</summary>
+    /// <summary> A mathematics Library </summary>
     ///-------------------------------------------------------------------------------------------------
 
     public class Math
     {
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Sums.</summary>
+        /// <summary> Addition or summary function</summary>
         ///
         /// <param name="number1"> Number of 1s.</param>
         /// <param name="number2"> Number of 2s.</param>
@@ -29,7 +30,7 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Subs.</summary>
+        /// <summary> Substraction function </summary>
         ///
         /// <param name="minuend">    The minuend.</param>
         /// <param name="subtrahend"> The subtrahend.</param>
@@ -43,7 +44,7 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Muls.</summary>
+        /// <summary> Multiplikation function </summary>
         ///
         /// <param name="multiplicant"> The multiplicant.</param>
         /// <param name="multiplier">   The multiplier.</param>
@@ -57,11 +58,11 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Floors.</summary>
+        /// <summary> Flooring function</summary>
         ///
-        /// <param name="floorize"> The floorize.</param>
+        /// <param name="floorize"> The number to be floorize</param>
         ///
-        /// <returns> A double.</returns>
+        /// <returns> A double without decimal point.</returns>
         ///-------------------------------------------------------------------------------------------------
 
         public double Floor(double floorize)
@@ -70,7 +71,7 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Divs.</summary>
+        /// <summary> Division function.</summary>
         ///
         /// <param name="divident"> The divident.</param>
         /// <param name="divisor">  The divisor.</param>
@@ -90,7 +91,7 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Mods.</summary>
+        /// <summary> Modulo function.</summary>
         ///
         /// <param name="divident"> The divident.</param>
         /// <param name="divisor">  The divisor.</param>
@@ -106,7 +107,7 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Pows.</summary>
+        /// <summary> Power function</summary>
         ///
         /// <param name="basis">    The basis.</param>
         /// <param name="exponent"> The exponent.</param>
@@ -120,7 +121,7 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Sqrts.</summary>
+        /// <summary> Square function.</summary>
         ///
         /// <param name="basis">    The basis.</param>
         /// <param name="exponent"> The exponent.</param>
@@ -142,7 +143,7 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Facs.</summary>
+        /// <summary> Factorial function.</summary>
         ///
         /// <param name="factorial"> The factorial.</param>
         ///
@@ -167,24 +168,16 @@ namespace Mathematics
 
 
         ///////////////
-        ///PROFILING
+        //PROFILING
         ///////////////
-        /*
-        public double Sum_Arr(double[] arr)
-        {
-            ///SUM
-            double counter = 0;
-            for (int i = 0; i < arr.Length; i++)
-                counter = counter + arr[i];
-            return counter;
-        }*/
+        
 
         ///-------------------------------------------------------------------------------------------------
         /// <summary> Counts the given array.</summary>
         ///
-        /// <param name="arr"> The array.</param>
+        /// <param name="arr"> The array of arguments</param>
         ///
-        /// <returns> A double.</returns>
+        /// <returns> A double a single number</returns>
         ///-------------------------------------------------------------------------------------------------
 
         public double X_count(double[] arr)
@@ -197,12 +190,12 @@ namespace Mathematics
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Counts.</summary>
+        /// <summary> Counts Standard deviation</summary>
         ///
-        /// <param name="x">   The x coordinate.</param>
-        /// <param name="arr"> The array.</param>
+        /// <param name="x">   Single number of function X_count</param>
+        /// <param name="arr"> The array of arguments</param>
         ///
-        /// <returns> A double.</returns>
+        /// <returns> A double, a Standard deviation number</returns>
         ///-------------------------------------------------------------------------------------------------
 
         public double S_count(double x, double[] arr)

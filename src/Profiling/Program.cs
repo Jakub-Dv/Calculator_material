@@ -1,7 +1,8 @@
 ﻿///-------------------------------------------------------------------------------------------------
-// file:	Program.cs
-//
-// summary:	Implements the program class
+/// file:	Program.cs
+/// <author> Jaroslav Kvasnička </author>
+///<date> 20.4.2020 </date>
+/// summary:	Implements the program class
 ///-------------------------------------------------------------------------------------------------
 
 using System;
@@ -10,18 +11,18 @@ using Mathematics;
 namespace Profiling
 {
     ///-------------------------------------------------------------------------------------------------
-    /// <summary> A program.</summary>
+    /// <summary> Standart Deviation count program </summary>
     ///-------------------------------------------------------------------------------------------------
 
     class Program
     {
-        /// <summary> The mathematics.</summary>
+        /// <summary> The mathematics library </summary>
         static Mathematics.Math Math = new Mathematics.Math();
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Main entry-point for this application.</summary>
+        /// <summary> Count of a Standart Deviation </summary>
         ///
-        /// <param name="args"> An array of command-line argument strings.</param>
+        /// <param name="args"> Input are used arguments at stdin</param>
         ///-------------------------------------------------------------------------------------------------
 
         static void Main(string[] args)
