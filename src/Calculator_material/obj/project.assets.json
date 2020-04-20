@@ -204,26 +204,25 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "MaterialDesignColors >= 1.2.3",
       "MaterialDesignThemes >= 3.1.0",
       "Mathematics >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jakub\\.nuget\\packages\\": {}
+    "C:\\Users\\jarek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\Calculator_material.csproj",
+      "projectUniqueName": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\Calculator_material.csproj",
       "projectName": "Calculator_material",
-      "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\Calculator_material.csproj",
-      "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Calculator_material\\obj\\",
+      "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\Calculator_material.csproj",
+      "packagesPath": "C:\\Users\\jarek\\.nuget\\packages\\",
+      "outputPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Calculator_material\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jarek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -236,8 +235,8 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Mathematics\\Mathematics.csproj": {
-              "projectPath": "C:\\Programming\\Calculator\\Odevzdávané repo\\xdvora3k_xkvasn14_xkuzel08\\src\\Mathematics\\Mathematics.csproj"
+            "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj": {
+              "projectPath": "C:\\IVS_PROJEKT_2\\Calculator_material\\src\\Mathematics\\Mathematics.csproj"
             }
           }
         }
@@ -246,10 +245,6 @@
     "frameworks": {
       "net472": {
         "dependencies": {
-          "MaterialDesignColors": {
-            "target": "Package",
-            "version": "[1.2.3, )"
-          },
           "MaterialDesignThemes": {
             "target": "Package",
             "version": "[3.1.0, )"
