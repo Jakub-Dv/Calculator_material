@@ -6,255 +6,284 @@
     <members>
         <member name="T:MathLibTests.UnitMathTests">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Class) a unit mathematics tests.</summary>
+             <summary> Unit mathematics tests.</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="F:MathLibTests.UnitMathTests.Math">
-            <summary> The mathematics.</summary>
+            <summary> The mathematics library.</summary>
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_positive_Sum">
             -------------------------------------------------------------------------------------------------
-             <summary> SUM.</summary>
+             <summary> SUMMARY TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing positive + positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_negative_Sum">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) positive negative sum.</summary>
+             <summary> Testing positive + negative number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_positive_Sum">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative positive sum.</summary>
+             <summary> Testing negative + positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_negative_Sum">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative sum.</summary>
+             <summary> Testing negative + negative number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_positive_Sub">
             -------------------------------------------------------------------------------------------------
-             <summary> SUB.</summary>
+             <summary> SUBSTRACTION TESTS </summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing positive - positive number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_negative_Sub">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative sub.</summary>
+             <summary> Testing negative - negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_negative_Sub">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) positive negative sub.</summary>
+             <summary> Testing positive - negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_positive_Sub">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative positive sub.</summary>
+             <summary> Testing negative - positive number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_positive_Mul">
             -------------------------------------------------------------------------------------------------
-             <summary> MUL.</summary>
+             <summary> MULTIPLICATION TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing positive x positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_negative_Mul">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative mul.</summary>
+             <summary> Testing negative x negative number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_positive_Mul">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative positive mul.</summary>
+             <summary> Testing negative x positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_negative_Mul">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) positive negative mul.</summary>
+             <summary> Testing positive x negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_positive_Div">
             -------------------------------------------------------------------------------------------------
-             <summary> DIV.</summary>
+             <summary> DIVISION TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing positive / positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_negative_Div">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative div.</summary>
+             <summary> Testing negative / negative number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_positive_Div">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative positive div.</summary>
+             <summary> Testing negative / positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_negative_Div">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) positive negative div.</summary>
+             <summary> Testing positive / negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.divByZero_Positive">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) div by zero positive.</summary>
+             <summary> Testing positive number / 0 </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.divByZero_Negative">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) div by zero negative.</summary>
+             <summary> Testing negative number / 0 </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.divByZero_NaN">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) div by zero NaN.</summary>
+             <summary> Testing devision zero by zero </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_positive_Mod">
             -------------------------------------------------------------------------------------------------
-             <summary> MOD.</summary>
+             <summary> MODULO TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing positive % positive number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_negative_Mod">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative modifier.</summary>
+             <summary> Testing negative % negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_positive_Mod">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative positive modifier.</summary>
+             <summary> Testing negative % positive number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
-        <member name="M:MathLibTests.UnitMathTests.positive_negative_Mod">
-            -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) positive negative modifier.</summary>
-            -------------------------------------------------------------------------------------------------
-        </member>
+        <!-- Badly formed XML comment ignored for member "M:MathLibTests.UnitMathTests.positive_negative_Mod" -->
         <member name="M:MathLibTests.UnitMathTests.divByZero">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) div by zero.</summary>
+             <summary> Testing positive number % 0 </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.decPoint_Fac">
             -------------------------------------------------------------------------------------------------
-             <summary> FAC.</summary>
+             <summary> FACTORIAL TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing decimal point in number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Negative_Fac">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative fac.</summary>
+             <summary> Testing negative number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Zero_Fac">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) zero fac.</summary>
+             <summary> Testing zero number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Positive_Fac">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) positive fac.</summary>
+             <summary> Testing positive number without decimal point </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Overflow_Fac">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) overflow fac.</summary>
+             <summary> Testing overflow </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.decPoint_Floor">
             -------------------------------------------------------------------------------------------------
-             <summary> FLOOR.</summary>
+             <summary> FLOORIZE TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing decimal point in number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.decPoint2_Floor">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) decrement point 2 floor.</summary>
+             <summary> Testing decimal point in number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_positive_Pow">
             -------------------------------------------------------------------------------------------------
-             <summary> POW.</summary>
+             <summary> POWER TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing positive powered by positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_negative_Pow">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) positive negative pow.</summary>
+             <summary> Testing positive powered by negative number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_positive_Pow">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative positive pow.</summary>
+             <summary> Testing negative powered by positive number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_negative_Pow">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative pow.</summary>
+             <summary> Testing negative powered by negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.OnZero_Pow">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) executes the zero pow action.</summary>
+             <summary> Testing positive number powered by zero </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Zero_Pow">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) zero pow.</summary>
+             <summary> Testing zero number powered by positive number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Positive_Sqrt">
             -------------------------------------------------------------------------------------------------
-             <summary> SQRT.</summary>
+             <summary> SQUARE TESTS.</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing sqrt positive number</summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Negative_Sqrt">
             -------------------------------------------------------------------------------------------------
-             <summary> Negative sqrt.</summary>
+             <summary> Testing sqrt negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.Zero_Sqrt">
             -------------------------------------------------------------------------------------------------
-             <summary> Zero sqrt.</summary>
+             <summary> Testing sqrt zero number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.OnZero_Sqrt">
             -------------------------------------------------------------------------------------------------
-             <summary> Executes the zero sqrt action.</summary>
+             <summary> Testing Positive number squared by zero </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.OnNegative_Sqrt">
             -------------------------------------------------------------------------------------------------
-             <summary> Executes the negative sqrt action.</summary>
+             <summary> Testing positive number squared by negative number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.OnPositive_Sqrt">
             -------------------------------------------------------------------------------------------------
-             <summary> Executes the positive sqrt action.</summary>
+             <summary> Testing positive number squared by positive number </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_xcount">
             -------------------------------------------------------------------------------------------------
-             <summary> X_count.</summary>
+             <summary> X_count TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing with all positive numbers </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_xcount">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative xcount.</summary>
+             <summary> Testing with all negative numbers </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.mix_xcount">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) mix xcount.</summary>
+             <summary> Testing with mix positive and negative numbers </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.positive_scount">
             -------------------------------------------------------------------------------------------------
-             <summary> S_count.</summary>
+             <summary> S_count TESTS</summary>
+            -------------------------------------------------------------------------------------------------
+            -------------------------------------------------------------------------------------------------
+             <summary> Testing with all positive numbers </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.negative_scount">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) negative scount.</summary>
+             <summary> Testing with all negative numbers and positive constant </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:MathLibTests.UnitMathTests.mix_scount">
             -------------------------------------------------------------------------------------------------
-             <summary> (Unit Test Method) mix scount.</summary>
+             <summary> Testing with mixed numbers and negative constant </summary>
             -------------------------------------------------------------------------------------------------
         </member>
     </members>

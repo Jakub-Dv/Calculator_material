@@ -6,17 +6,17 @@
     <members>
         <member name="T:Profiling.Program">
             -------------------------------------------------------------------------------------------------
-             <summary> A program.</summary>
+             <summary> Standart Deviation count program </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="F:Profiling.Program.Math">
-            <summary> The mathematics.</summary>
+            <summary> The mathematics library </summary>
         </member>
         <member name="M:Profiling.Program.Main(System.String[])">
             -------------------------------------------------------------------------------------------------
-             <summary> Main entry-point for this application.</summary>
+             <summary> Count of a Standart Deviation </summary>
             
-             <param name="args"> An array of command-line argument strings.</param>
+             <param name="args"> Input are used arguments at stdin</param>
             -------------------------------------------------------------------------------------------------
         </member>
     </members>

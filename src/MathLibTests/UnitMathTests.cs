@@ -1,7 +1,8 @@
 ﻿///-------------------------------------------------------------------------------------------------
-// file:	UnitMathTests.cs
-//
-// summary:	Implements the unit mathematics tests class
+/// file:	UnitMathTests.cs
+/// <author>Jaroslav Kvasnicka</author>
+/// <date> 20.4.2020 </date>
+/// summary:	Implements the unit mathematics tests class
 ///-------------------------------------------------------------------------------------------------
 
 using System;
@@ -11,19 +12,22 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace MathLibTests
 {
     ///-------------------------------------------------------------------------------------------------
-    /// <summary> (Unit Test Class) a unit mathematics tests.</summary>
+    /// <summary> Unit mathematics tests.</summary>
     ///-------------------------------------------------------------------------------------------------
 
     [TestClass]
     public class UnitMathTests
     {
-        /// <summary> The mathematics.</summary>
+        /// <summary> The mathematics library.</summary>
         Mathematics.Math Math = new Mathematics.Math();
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> SUM.</summary>
+        /// <summary> SUMMARY TESTS</summary>
         ///-------------------------------------------------------------------------------------------------
-        
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing positive + positive number</summary>
+        ///-------------------------------------------------------------------------------------------------
+
         [TestMethod]
         public void positive_positive_Sum()
         {
@@ -33,7 +37,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) positive negative sum.</summary>
+        /// <summary> Testing positive + negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -46,7 +50,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative positive sum.</summary>
+        /// <summary> Testing negative + positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -59,7 +63,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative sum.</summary>
+        /// <summary> Testing negative + negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -71,9 +75,12 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> SUB.</summary>
+        /// <summary> SUBSTRACTION TESTS </summary>
         ///-------------------------------------------------------------------------------------------------
-        
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing positive - positive number </summary>
+        ///-------------------------------------------------------------------------------------------------
+
         [TestMethod]
         public void positive_positive_Sub()
         {
@@ -83,7 +90,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative sub.</summary>
+        /// <summary> Testing negative - negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -95,7 +102,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) positive negative sub.</summary>
+        /// <summary> Testing positive - negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -108,7 +115,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative positive sub.</summary>
+        /// <summary> Testing negative - positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -121,7 +128,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> MUL.</summary>
+        /// <summary> MULTIPLICATION TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing positive x positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -133,7 +143,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative mul.</summary>
+        /// <summary> Testing negative x negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -145,7 +155,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative positive mul.</summary>
+        /// <summary> Testing negative x positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -158,7 +168,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) positive negative mul.</summary>
+        /// <summary> Testing positive x negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -171,7 +181,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> DIV.</summary>
+        /// <summary> DIVISION TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing positive / positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -183,7 +196,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative div.</summary>
+        /// <summary> Testing negative / negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -195,7 +208,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative positive div.</summary>
+        /// <summary> Testing negative / positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -208,7 +221,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) positive negative div.</summary>
+        /// <summary> Testing positive / negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -221,7 +234,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) div by zero positive.</summary>
+        /// <summary> Testing positive number / 0 </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -232,7 +245,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) div by zero negative.</summary>
+        /// <summary> Testing negative number / 0 </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -243,7 +256,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) div by zero NaN.</summary>
+        /// <summary> Testing devision zero by zero </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -254,7 +267,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> MOD.</summary>
+        /// <summary> MODULO TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing positive % positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -266,7 +282,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative modifier.</summary>
+        /// <summary> Testing negative % negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -278,7 +294,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative positive modifier.</summary>
+        /// <summary> Testing negative % positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -291,7 +307,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) positive negative modifier.</summary>
+        /// Testing positive % negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -304,7 +320,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) div by zero.</summary>
+        /// <summary> Testing positive number % 0 </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -315,7 +331,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> FAC.</summary>
+        /// <summary> FACTORIAL TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing decimal point in number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -326,7 +345,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative fac.</summary>
+        /// <summary> Testing negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -337,7 +356,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) zero fac.</summary>
+        /// <summary> Testing zero number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -348,7 +367,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) positive fac.</summary>
+        /// <summary> Testing positive number without decimal point </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -359,7 +378,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) overflow fac.</summary>
+        /// <summary> Testing overflow </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -370,7 +389,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> FLOOR.</summary>
+        /// <summary> FLOORIZE TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing decimal point in number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -381,7 +403,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) decrement point 2 floor.</summary>
+        /// <summary> Testing decimal point in number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -392,7 +414,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> POW.</summary>
+        /// <summary> POWER TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing positive powered by positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -404,7 +429,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) positive negative pow.</summary>
+        /// <summary> Testing positive powered by negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -417,7 +442,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative positive pow.</summary>
+        /// <summary> Testing negative powered by positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -430,7 +455,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative pow.</summary>
+        /// <summary> Testing negative powered by negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -442,7 +467,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) executes the zero pow action.</summary>
+        /// <summary> Testing positive number powered by zero </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -453,7 +478,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) zero pow.</summary>
+        /// <summary> Testing zero number powered by positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -464,7 +489,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> SQRT.</summary>
+        /// <summary> SQUARE TESTS.</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing sqrt positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -476,7 +504,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Negative sqrt.</summary>
+        /// <summary> Testing sqrt negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void Negative_Sqrt()
@@ -487,7 +515,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Zero sqrt.</summary>
+        /// <summary> Testing sqrt zero number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void Zero_Sqrt()
@@ -498,7 +526,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Executes the zero sqrt action.</summary>
+        /// <summary> Testing Positive number squared by zero </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void OnZero_Sqrt()
@@ -509,7 +537,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Executes the negative sqrt action.</summary>
+        /// <summary> Testing positive number squared by negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void OnNegative_Sqrt()
@@ -520,7 +548,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Executes the positive sqrt action.</summary>
+        /// <summary> Testing positive number squared by positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void OnPositive_Sqrt()
@@ -531,7 +559,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> X_count.</summary>
+        /// <summary> X_count TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing with all positive numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -542,7 +573,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative xcount.</summary>
+        /// <summary> Testing with all negative numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -553,7 +584,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) mix xcount.</summary>
+        /// <summary> Testing with mix positive and negative numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -564,7 +595,10 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> S_count.</summary>
+        /// <summary> S_count TESTS</summary>
+        ///-------------------------------------------------------------------------------------------------
+        ///-------------------------------------------------------------------------------------------------
+        /// <summary> Testing with all positive numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -576,7 +610,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) negative scount.</summary>
+        /// <summary> Testing with all negative numbers and positive constant </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -588,7 +622,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> (Unit Test Method) mix scount.</summary>
+        /// <summary> Testing with mixed numbers and negative constant </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]

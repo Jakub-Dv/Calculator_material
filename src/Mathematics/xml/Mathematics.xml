@@ -6,12 +6,12 @@
     <members>
         <member name="T:Mathematics.Math">
             -------------------------------------------------------------------------------------------------
-             <summary> A mathematics.</summary>
+             <summary> A mathematics Library </summary>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Sum(System.Double,System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Sums.</summary>
+             <summary> Addition or summary function</summary>
             
              <param name="number1"> Number of 1s.</param>
              <param name="number2"> Number of 2s.</param>
@@ -21,7 +21,7 @@
         </member>
         <member name="M:Mathematics.Math.Sub(System.Double,System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Subs.</summary>
+             <summary> Substraction function </summary>
             
              <param name="minuend">    The minuend.</param>
              <param name="subtrahend"> The subtrahend.</param>
@@ -31,7 +31,7 @@
         </member>
         <member name="M:Mathematics.Math.Mul(System.Double,System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Muls.</summary>
+             <summary> Multiplikation function </summary>
             
              <param name="multiplicant"> The multiplicant.</param>
              <param name="multiplier">   The multiplier.</param>
@@ -41,16 +41,16 @@
         </member>
         <member name="M:Mathematics.Math.Floor(System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Floors.</summary>
+             <summary> Flooring function</summary>
             
-             <param name="floorize"> The floorize.</param>
+             <param name="floorize"> The number to be floorize</param>
             
-             <returns> A double.</returns>
+             <returns> A double without decimal point.</returns>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Div(System.Double,System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Divs.</summary>
+             <summary> Division function.</summary>
             
              <param name="divident"> The divident.</param>
              <param name="divisor">  The divisor.</param>
@@ -60,7 +60,7 @@
         </member>
         <member name="M:Mathematics.Math.Mod(System.Double,System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Mods.</summary>
+             <summary> Modulo function.</summary>
             
              <param name="divident"> The divident.</param>
              <param name="divisor">  The divisor.</param>
@@ -70,7 +70,7 @@
         </member>
         <member name="M:Mathematics.Math.Pow(System.Double,System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Pows.</summary>
+             <summary> Power function</summary>
             
              <param name="basis">    The basis.</param>
              <param name="exponent"> The exponent.</param>
@@ -80,7 +80,7 @@
         </member>
         <member name="M:Mathematics.Math.Sqrt(System.Double,System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Sqrts.</summary>
+             <summary> Square function.</summary>
             
              <param name="basis">    The basis.</param>
              <param name="exponent"> The exponent.</param>
@@ -90,7 +90,7 @@
         </member>
         <member name="M:Mathematics.Math.Fac(System.Double)">
             -------------------------------------------------------------------------------------------------
-             <summary> Facs.</summary>
+             <summary> Factorial function.</summary>
             
              <param name="factorial"> The factorial.</param>
             
@@ -101,19 +101,19 @@
             -------------------------------------------------------------------------------------------------
              <summary> Counts the given array.</summary>
             
-             <param name="arr"> The array.</param>
+             <param name="arr"> The array of arguments</param>
             
-             <returns> A double.</returns>
+             <returns> A double a single number</returns>
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.S_count(System.Double,System.Double[])">
             -------------------------------------------------------------------------------------------------
-             <summary> Counts.</summary>
+             <summary> Counts Standard deviation</summary>
             
-             <param name="x">   The x coordinate.</param>
-             <param name="arr"> The array.</param>
+             <param name="x">   Single number of function X_count</param>
+             <param name="arr"> The array of arguments</param>
             
-             <returns> A double.</returns>
+             <returns> A double, a Standard deviation number</returns>
             -------------------------------------------------------------------------------------------------
         </member>
     </members>
