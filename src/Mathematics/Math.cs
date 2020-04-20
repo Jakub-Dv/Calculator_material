@@ -18,15 +18,15 @@ namespace Mathematics
         ///-------------------------------------------------------------------------------------------------
         /// <summary> Addition or summary function</summary>
         ///
-        /// <param name="number1"> Number of 1s.</param>
-        /// <param name="number2"> Number of 2s.</param>
+        /// <param name="summand1"> First Summand.</param>
+        /// <param name="summand2"> Second Summand</param>
         ///
-        /// <returns> A double.</returns>
+        /// 
         ///-------------------------------------------------------------------------------------------------
 
-        public double Sum(double number1, double number2)
+        public double Sum(double summand1, double summand2)
         {
-            return (number1 + number2);
+            return (summand1 + summand2);
         }
 
         ///-------------------------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ namespace Mathematics
         /// <param name="minuend">    The minuend.</param>
         /// <param name="subtrahend"> The subtrahend.</param>
         ///
-        /// <returns> A double.</returns>
+        ///
         ///-------------------------------------------------------------------------------------------------
 
         public double Sub(double minuend, double subtrahend)
@@ -49,7 +49,7 @@ namespace Mathematics
         /// <param name="multiplicant"> The multiplicant.</param>
         /// <param name="multiplier">   The multiplier.</param>
         ///
-        /// <returns> A double.</returns>
+        ///
         ///-------------------------------------------------------------------------------------------------
 
         public double Mul(double multiplicant, double multiplier)
@@ -76,7 +76,7 @@ namespace Mathematics
         /// <param name="divident"> The divident.</param>
         /// <param name="divisor">  The divisor.</param>
         ///
-        /// <returns> A double.</returns>
+        ///
         ///-------------------------------------------------------------------------------------------------
 
         public double Div(double divident, double divisor)
@@ -96,7 +96,7 @@ namespace Mathematics
         /// <param name="divident"> The divident.</param>
         /// <param name="divisor">  The divisor.</param>
         ///
-        /// <returns> A double.</returns>
+        ///
         ///-------------------------------------------------------------------------------------------------
 
         public double Mod(double divident, double divisor)
@@ -112,7 +112,7 @@ namespace Mathematics
         /// <param name="basis">    The basis.</param>
         /// <param name="exponent"> The exponent.</param>
         ///
-        /// <returns> A double.</returns>
+        ///
         ///-------------------------------------------------------------------------------------------------
 
         public double Pow(double basis, double exponent)
@@ -126,7 +126,7 @@ namespace Mathematics
         /// <param name="basis">    The basis.</param>
         /// <param name="exponent"> The exponent.</param>
         ///
-        /// <returns> A double.</returns>
+        ///
         ///-------------------------------------------------------------------------------------------------
 
         public double Sqrt(double basis, double exponent)
@@ -147,7 +147,7 @@ namespace Mathematics
         ///
         /// <param name="factorial"> The factorial.</param>
         ///
-        /// <returns> A double.</returns>
+        /// 
         ///-------------------------------------------------------------------------------------------------
 
         public double Fac(double factorial)
@@ -159,7 +159,9 @@ namespace Mathematics
 
             if (factorial == 0)
                 return 1.0;
-
+            if (factorial > 10000)
+                return double.PositiveInfinity;
+            
             double result = factorial;
             for (double i = 1; i < factorial; i++)
                 result = result * (factorial - i);

@@ -22,10 +22,7 @@ namespace MathLibTests
         Mathematics.Math Math = new Mathematics.Math();
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> SUMMARY TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive + positive number</summary>
+        /// <summary> SUM - Testing positive + positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -37,7 +34,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive + negative number</summary>
+        /// <summary> SUM - Testing positive + negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -50,7 +47,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative + positive number</summary>
+        /// <summary> SUM - Testing negative + positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -63,7 +60,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative + negative number</summary>
+        /// <summary> SUM - Testing negative + negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -74,11 +71,9 @@ namespace MathLibTests
             Assert.AreEqual(negative * 2, Math.Sum(negative, negative));
         }
 
+        
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> SUBSTRACTION TESTS </summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive - positive number </summary>
+        /// <summary> SUB - Testing positive - positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -90,7 +85,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative - negative number </summary>
+        /// <summary> SUB - Testing negative - negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -102,7 +97,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive - negative number </summary>
+        /// <summary> SUB - Testing positive - negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -115,7 +110,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative - positive number </summary>
+        /// <summary> SUB - Testing negative - positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -127,11 +122,9 @@ namespace MathLibTests
             Assert.AreEqual(-2000, Math.Sub(negative, positive));
         }
 
+       
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> MULTIPLICATION TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive x positive number</summary>
+        /// <summary> MUL -Testing positive x positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -143,7 +136,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative x negative number</summary>
+        /// <summary> MUL - Testing negative x negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -155,7 +148,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative x positive number</summary>
+        /// <summary> MUL - Testing negative x positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -168,7 +161,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive x negative number </summary>
+        /// <summary> MUL - Testing positive x negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -180,11 +173,9 @@ namespace MathLibTests
             Assert.AreEqual(-1000000, Math.Mul(positive,negative));
         }
 
+    
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> DIVISION TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive / positive number</summary>
+        /// <summary> DIV - Testing positive / positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -196,7 +187,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative / negative number</summary>
+        /// <summary> DIV - Testing negative / negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -208,7 +199,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative / positive number</summary>
+        /// <summary> DIV - Testing negative / positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -221,7 +212,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive / negative number </summary>
+        /// <summary> DIV - Testing positive / negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -234,7 +225,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive number / 0 </summary>
+        /// <summary> DIV - Testing positive number / 0 </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -245,7 +236,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative number / 0 </summary>
+        /// <summary> DIV - Testing negative number / 0 </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -256,7 +247,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing devision zero by zero </summary>
+        /// <summary> DIV - Testing devision zero by zero </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -266,11 +257,9 @@ namespace MathLibTests
             Assert.AreEqual(Double.NaN, Math.Div(number, 0));
         }
 
+       
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> MODULO TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive % positive number </summary>
+        /// <summary> MOD - Testing positive % positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -282,7 +271,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative % negative number </summary>
+        /// <summary> MOD - Testing negative % negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -294,7 +283,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative % positive number </summary>
+        /// <summary> MOD - Testing negative % positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -307,7 +296,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// Testing positive % negative number </summary>
+        /// <summary> MOD - Testing positive % negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -320,7 +309,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive number % 0 </summary>
+        /// <summary> MOD - Testing positive number % 0 </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -330,11 +319,9 @@ namespace MathLibTests
             Assert.AreEqual(Double.NaN, Math.Mod(number, 0));
         }
 
+       
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> FACTORIAL TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing decimal point in number </summary>
+        /// <summary> FAC - Testing decimal point in number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -345,7 +332,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative number</summary>
+        /// <summary> FAC - Testing negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -356,7 +343,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing zero number </summary>
+        /// <summary> FAC - Testing zero number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -367,7 +354,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive number without decimal point </summary>
+        /// <summary> FAC - Testing positive number without decimal point </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -378,7 +365,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing overflow </summary>
+        /// <summary> FAC - Testing overflow </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -388,11 +375,9 @@ namespace MathLibTests
             Assert.AreEqual(Double.PositiveInfinity, Math.Fac(number));
         }
 
+       
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> FLOORIZE TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing decimal point in number</summary>
+        /// <summary> FLOOR - Testing decimal point in number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -403,7 +388,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing decimal point in number</summary>
+        /// <summary> FLOOR - Testing decimal point in number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -413,11 +398,9 @@ namespace MathLibTests
             Assert.AreEqual(10.00, Math.Floor(number));
         }
 
+        
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> POWER TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive powered by positive number</summary>
+        /// <summary> POW - Testing positive powered by positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -429,7 +412,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive powered by negative number</summary>
+        /// <summary> POW - Testing positive powered by negative number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -442,7 +425,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative powered by positive number </summary>
+        /// <summary> POW - Testing negative powered by positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -455,7 +438,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing negative powered by negative number </summary>
+        /// <summary> POW - Testing negative powered by negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -467,7 +450,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive number powered by zero </summary>
+        /// <summary> POW - Testing positive number powered by zero </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -478,7 +461,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing zero number powered by positive number </summary>
+        /// <summary> POW - Testing zero number powered by positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -488,11 +471,9 @@ namespace MathLibTests
             Assert.AreEqual(0, Math.Pow(number, 55));
         }
 
+        
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> SQUARE TESTS.</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing sqrt positive number</summary>
+        /// <summary> SQRT - Testing sqrt positive number</summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -504,7 +485,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing sqrt negative number </summary>
+        /// <summary> SQRT - Testing sqrt negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void Negative_Sqrt()
@@ -515,7 +496,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing sqrt zero number </summary>
+        /// <summary> SQRT - Testing sqrt zero number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void Zero_Sqrt()
@@ -526,7 +507,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing Positive number squared by zero </summary>
+        /// <summary> SQRT - Testing Positive number squared by zero </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void OnZero_Sqrt()
@@ -537,7 +518,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive number squared by negative number </summary>
+        /// <summary> SQRT - Testing positive number squared by negative number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void OnNegative_Sqrt()
@@ -548,7 +529,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing positive number squared by positive number </summary>
+        /// <summary> SQRT - Testing positive number squared by positive number </summary>
         ///-------------------------------------------------------------------------------------------------
 
         public void OnPositive_Sqrt()
@@ -558,11 +539,9 @@ namespace MathLibTests
             Assert.AreEqual(10,Math.Sqrt(number,3));
         }
 
+      
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> X_count TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing with all positive numbers </summary>
+        /// <summary> X_count - Testing with all positive numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -573,7 +552,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing with all negative numbers </summary>
+        /// <summary> X_count - Testing with all negative numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -584,7 +563,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing with mix positive and negative numbers </summary>
+        /// <summary> X_count - Testing with mix positive and negative numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -595,10 +574,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> S_count TESTS</summary>
-        ///-------------------------------------------------------------------------------------------------
-        ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing with all positive numbers </summary>
+        /// <summary> S_count - Testing with all positive numbers </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -610,7 +586,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing with all negative numbers and positive constant </summary>
+        /// <summary> S_count - Testing with all negative numbers and positive constant </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
@@ -622,7 +598,7 @@ namespace MathLibTests
         }
 
         ///-------------------------------------------------------------------------------------------------
-        /// <summary> Testing with mixed numbers and negative constant </summary>
+        /// <summary> S_count - Testing with mixed numbers and negative constant </summary>
         ///-------------------------------------------------------------------------------------------------
 
         [TestMethod]
