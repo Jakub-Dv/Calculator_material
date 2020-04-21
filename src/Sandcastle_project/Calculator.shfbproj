@@ -22,15 +22,16 @@
     <Language>en-US</Language>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\Calculator_material\Calculator_material.csproj" />
-<DocumentationSource sourceFile="..\Mathematics\Mathematics.csproj" />
-<DocumentationSource sourceFile="..\MathLibTests\MathLibTests.csproj" />
-<DocumentationSource sourceFile="..\Profiling\Profiling.csproj" />
-<DocumentationSource sourceFile="..\Mathematics\bin\Debug\Mathematics.xml" />
-<DocumentationSource sourceFile="..\Mathematics\bin\Debug\Mathematics.dll" />
-<DocumentationSource sourceFile="..\MathLibTests\bin\Debug\MathLibTests.xml" />
-<DocumentationSource sourceFile="..\MathLibTests\bin\Debug\MathLibTests.dll" />
-<DocumentationSource sourceFile="..\Profiling\bin\Debug\Profiling.exe" />
-<DocumentationSource sourceFile="..\Profiling\bin\Debug\Profiling.xml" /></DocumentationSources>
+      <DocumentationSource sourceFile="..\Mathematics\Mathematics.csproj" />
+      <DocumentationSource sourceFile="..\MathLibTests\MathLibTests.csproj" />
+      <DocumentationSource sourceFile="..\Profiling\Profiling.csproj" />
+      <DocumentationSource sourceFile="..\Mathematics\bin\Debug\Mathematics.xml" />
+      <DocumentationSource sourceFile="..\Mathematics\bin\Debug\Mathematics.dll" />
+      <DocumentationSource sourceFile="..\MathLibTests\bin\Debug\MathLibTests.xml" />
+      <DocumentationSource sourceFile="..\MathLibTests\bin\Debug\MathLibTests.dll" />
+      <DocumentationSource sourceFile="..\Profiling\bin\Debug\Profiling.exe" />
+      <DocumentationSource sourceFile="..\Profiling\bin\Debug\Profiling.xml" />
+    </DocumentationSources>
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
     <HelpFileFormat>Website</HelpFileFormat>
     <SyntaxFilters>C#</SyntaxFilters>

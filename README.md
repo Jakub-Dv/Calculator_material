@@ -13,4 +13,4 @@ Nazev tymu
 Licence
 -------
 
-Tento program je poskytovan...
+Tento program je poskytovan pod open-source licensi GNU 3.
