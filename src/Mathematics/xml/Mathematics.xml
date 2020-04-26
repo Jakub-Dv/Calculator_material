@@ -13,10 +13,10 @@
             -------------------------------------------------------------------------------------------------
              <summary> Addition or summary function</summary>
             
-             <param name="number1"> Number of 1s.</param>
-             <param name="number2"> Number of 2s.</param>
+             <param name="summand1"> First Summand.</param>
+             <param name="summand2"> Second Summand</param>
             
-             <returns> A double.</returns>
+             
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Sub(System.Double,System.Double)">
@@ -26,7 +26,7 @@
              <param name="minuend">    The minuend.</param>
              <param name="subtrahend"> The subtrahend.</param>
             
-             <returns> A double.</returns>
+            
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Mul(System.Double,System.Double)">
@@ -36,7 +36,7 @@
              <param name="multiplicant"> The multiplicant.</param>
              <param name="multiplier">   The multiplier.</param>
             
-             <returns> A double.</returns>
+            
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Floor(System.Double)">
@@ -55,7 +55,7 @@
              <param name="divident"> The divident.</param>
              <param name="divisor">  The divisor.</param>
             
-             <returns> A double.</returns>
+            
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Mod(System.Double,System.Double)">
@@ -65,7 +65,7 @@
              <param name="divident"> The divident.</param>
              <param name="divisor">  The divisor.</param>
             
-             <returns> A double.</returns>
+            
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Pow(System.Double,System.Double)">
@@ -75,7 +75,7 @@
              <param name="basis">    The basis.</param>
              <param name="exponent"> The exponent.</param>
             
-             <returns> A double.</returns>
+            
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Sqrt(System.Double,System.Double)">
@@ -85,7 +85,7 @@
              <param name="basis">    The basis.</param>
              <param name="exponent"> The exponent.</param>
             
-             <returns> A double.</returns>
+            
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.Fac(System.Double)">
@@ -94,7 +94,7 @@
             
              <param name="factorial"> The factorial.</param>
             
-             <returns> A double.</returns>
+             
             -------------------------------------------------------------------------------------------------
         </member>
         <member name="M:Mathematics.Math.X_count(System.Double[])">

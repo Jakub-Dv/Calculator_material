@@ -78,6 +78,13 @@
              ### <param name="decimalCount"> Number of decimals.</param>
             -------------------------------------------------------------------------------------------------
         </member>
+        <member name="F:Calculator___material.MainWindow.numberPressed">
+            -------------------------------------------------------------------------------------------------
+             <summary> Was number pressed?</summary>
+             ### <param name="numberPressed"> Used for idetification if the number button was pressed.</param>
+            -------------------------------------------------------------------------------------------------
+             
+        </member>
         <member name="F:Calculator___material.MainWindow.prevEqv">
             -------------------------------------------------------------------------------------------------
              <summary> Used for idetification of previous equalization.</summary>

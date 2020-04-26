@@ -51,6 +51,13 @@ namespace Calculator___material
         private int decimalCount = 0;
 
         ///-------------------------------------------------------------------------------------------------
+        /// <summary> Was number pressed?</summary>
+        /// ### <param name="numberPressed"> Used for idetification if the number button was pressed.</param>
+        ///-------------------------------------------------------------------------------------------------
+        /// 
+        private bool numberPressed = false;
+
+        ///-------------------------------------------------------------------------------------------------
         /// <summary> Used for idetification of previous equalization.</summary>
         /// ### <param name="prevEqv"> Used for idetification of previous equalization.</param>
         ///-------------------------------------------------------------------------------------------------
@@ -93,7 +100,7 @@ namespace Calculator___material
                 decimalCount++;
                 number1 = number1 + Math.Pow(10, -decimalCount) * number;
             }
-            
+            numberPressed = true;
             string toBePrinted = number1.ToString();
             InputBox.Text = toBePrinted;
         }
@@ -228,6 +235,7 @@ namespace Calculator___material
             number1 = default(double);
             decimalCount = 0;
             isDecimal = false;
+            numberPressed = false;
         }
 
         ///-------------------------------------------------------------------------------------------------
@@ -355,11 +363,12 @@ namespace Calculator___material
         private void ButtonAdd_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "+";
-            InputBox.Text = "0";
-
-            Operations(prevEqv);
-            Defaults();
-
+            if (numberPressed)
+            {
+                InputBox.Text = "0";
+                Operations(prevEqv);
+                Defaults();
+            }
             prevEqv = "add";
         }
 
@@ -373,11 +382,12 @@ namespace Calculator___material
         private void ButtonSub_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "-";
-            InputBox.Text = "0";
-
-            Operations(prevEqv);
-            Defaults();
-
+            if (numberPressed)
+            {
+                InputBox.Text = "0";
+                Operations(prevEqv);
+                Defaults();
+            }
             prevEqv = "sub";
         }
 
@@ -391,11 +401,12 @@ namespace Calculator___material
         private void ButtonMul_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "×";
-            InputBox.Text = "0";
-
-            Operations(prevEqv);
-            Defaults();
-
+            if (numberPressed)
+            {
+                InputBox.Text = "0";
+                Operations(prevEqv);
+                Defaults();
+            }
             prevEqv = "mul";
         }
 
@@ -413,11 +424,12 @@ namespace Calculator___material
         private void ButtonDiv_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "÷";
-            InputBox.Text = "0";
-
-            Operations(prevEqv);
-            Defaults();
-
+            if (numberPressed)
+            {
+                InputBox.Text = "0";
+                Operations(prevEqv);
+                Defaults();
+            }
             prevEqv = "div";
         }
 
@@ -487,11 +499,12 @@ namespace Calculator___material
         private void ButtonPow_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "^";
-            InputBox.Text = "0";
-
-            Operations(prevEqv);
-            Defaults();
-
+            if (numberPressed)
+            {
+                InputBox.Text = "0";
+                Operations(prevEqv);
+                Defaults();
+            }
             prevEqv = "pow";
         }
 
@@ -504,7 +517,7 @@ namespace Calculator___material
 
         private void ButtonFac_Click(object sender, RoutedEventArgs e)
         {
-            SignBox.Text = "!";
+            SignBox.Text = "!"; 
             InputBox.Text = "0";
             prevEqv = "fac";
 
@@ -524,14 +537,16 @@ namespace Calculator___material
         private void ButtonRoot_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "√";
-            InputBox.Text = "0";
-            if (prevEqv == "eqv")
+            if (numberPressed)
             {
-                number1 = 0;
+                InputBox.Text = "0";
+                if (prevEqv == "eqv")
+                {
+                    number1 = 0;
+                }
+                Operations(prevEqv);
+                Defaults();
             }
-            Operations(prevEqv);
-            Defaults();
-
             prevEqv = "sqrt";
         }
 
@@ -545,11 +560,12 @@ namespace Calculator___material
         private void ButtonMod_Click(object sender, RoutedEventArgs e)
         {
             SignBox.Text = "%";
-            InputBox.Text = "0";
-
-            Operations(prevEqv);
-            Defaults();
-
+            if (numberPressed)
+            {
+                InputBox.Text = "0";
+                Operations(prevEqv);
+                Defaults();
+            }
             prevEqv = "mod";
         }
 

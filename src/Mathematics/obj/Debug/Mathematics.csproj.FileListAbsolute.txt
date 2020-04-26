@@ -18,3 +18,4 @@ C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Math
 C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\obj\Debug\Mathematics.dll
 C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\obj\Debug\Mathematics.pdb
 C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\bin\Debug\Mathematics.xml
+C:\Programming\Calculator\Odevzdávané repo\xdvora3k_xkvasn14_xkuzel08\src\Mathematics\obj\Debug\Mathematics.csprojAssemblyReference.cache
