@@ -1,0 +1,25 @@
+Přidělení řešení:
+xkvasn14(knihovna,testy)
+xkuzel08(Design,Dokumentace)
+xdvora3k(Instalátor,Mat.Operace)
+
+----------------------------------------------
+
+Komunikační kanály:
+Messenger
+Discord
+
+----------------------------------------------
+
+Termíny:
+29.3. - Design, Knihovna, První část Kalkulačky (základní funkce)
+12.4. - Druhá část Kalkulačky (Pokročilé funkce)
+19.4. - Testy, Dokumentace, Prezentace
+(21.4. - Poslední úpravy)
+
+----------------------------------------------
+
+Systém pro správu verzí:
+Github
+Na email ivskontrola bude automaticky zaslána pozvánka k našemu repozitáři.
+xdvora3k udílí pravomoci k repozitáři, v případě potíží kontaktujte xdvora3k.
